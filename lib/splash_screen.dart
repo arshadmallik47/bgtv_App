@@ -14,20 +14,26 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 3),
-    ()=>Navigator.push(context, MaterialPageRoute(builder:(context) => const LoginScreen(),))
-    );
+    Timer(
+        const Duration(seconds: 3),
+        () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const LoginScreen(),
+            )));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Center(
         child: Container(
-          child: const Text(
-            'Splash Screen ',
-            style: TextStyle(
-              fontSize: 40,
+          width: 200,
+          height: 200,
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/images/bgtvlogo.png'),
             ),
           ),
         ),
