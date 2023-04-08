@@ -1,0 +1,6 @@
+package entertainment.bgtv
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
