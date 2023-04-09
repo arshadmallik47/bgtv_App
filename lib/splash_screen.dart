@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:bgtv/auth/login_screen.dart';
+import 'package:bgtv/ui/login_screen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -15,12 +15,14 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-        const Duration(seconds: 3),
-        () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const LoginScreen(),
-            )));
+      const Duration(seconds: 3),
+      () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const LoginScreen(),
+        ),
+      ),
+    );
   }
 
   @override
