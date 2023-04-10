@@ -1,3 +1,4 @@
+import 'package:bgtv/ui/main_screen.dart';
 import 'package:bgtv/ui/register_screen.dart';
 import 'package:bgtv/widgets/custom_text_field.dart';
 import 'package:bgtv/widgets/rounded_button.dart';
@@ -54,7 +55,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 keyboardType: TextInputType.emailAddress,
                 controller: emailController,
                 enableBorder: false,
-             
                 hintText: 'Email',
               ),
             ),
@@ -66,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
               child: CustomTextField(
                 controller: passwordController,
                 enableBorder: false,
-                  textStyle: const TextStyle(color: Colors.black),
+                textStyle: const TextStyle(color: Colors.black),
                 hintText: 'Password',
               ),
             ),
@@ -78,11 +78,18 @@ class _LoginScreenState extends State<LoginScreen> {
               child: RoundedButton(
                 colour: Colors.blue,
                 title: 'Login',
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const MainScreen (),
+                    ),
+                  );
+                },
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 25),
+              padding: const EdgeInsets.only(left: 25, right: 20),
               child: Row(
                 children: [
                   Checkbox(
@@ -98,15 +105,17 @@ class _LoginScreenState extends State<LoginScreen> {
                     style: TextStyle(color: Colors.white60),
                   ),
                   const SizedBox(
-                    width: 95,
+                    width: 105,
                   ),
-                  TextButton(
-                    onPressed: () {},
+                  InkWell(
+                    onTap: () {},
                     child: const Text(
                       'Need help?',
-                      style: TextStyle(color: Colors.white60),
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
+                  )
                 ],
               ),
             ),

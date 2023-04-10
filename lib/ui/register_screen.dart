@@ -1,4 +1,4 @@
-import 'package:bgtv/ui/place_order.dart';
+import 'package:bgtv/ui/place_order_screen.dart';
 import 'package:bgtv/widgets/rounded_button.dart';
 import 'package:flutter/material.dart';
 
