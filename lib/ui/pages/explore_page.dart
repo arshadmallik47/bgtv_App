@@ -89,7 +89,7 @@ class ExplorePage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 5,),
+          const SizedBox(height: 5,),
           Padding(
             padding: const EdgeInsets.only(left: 12.0, right: 12.0),
             child: Row(
