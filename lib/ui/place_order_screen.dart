@@ -17,11 +17,11 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
       backgroundColor: Colors.black,
       body: Column(
         children: [
-          SizedBox(
-            height: 20,
+          const SizedBox(
+            height: 15,
           ),
           Container(
-            height: 110,
+            height: 120,
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/images/applogo.png'),
@@ -205,20 +205,24 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                     ),
                   ],
                 ),
+                // const Text(
+                //   'Your personal data will be used to',
+                //   style: TextStyle(color: Colors.white),
+                // ),
+                // const Text(
+                //   'process your order, support your ',
+                //   style: TextStyle(color: Colors.white),
+                // ),
+                // const Text(
+                //   'experience throughout this website',
+                //   style: TextStyle(color: Colors.white),
+                // ),
+                // const Text(
+                //   'and for other purpose discribed in',
+                //   style: TextStyle(color: Colors.white),
+                // ),
                 const Text(
-                  'Your personal data will be used to',
-                  style: TextStyle(color: Colors.white),
-                ),
-                const Text(
-                  'process your order, support your ',
-                  style: TextStyle(color: Colors.white),
-                ),
-                const Text(
-                  'experience throughout this website',
-                  style: TextStyle(color: Colors.white),
-                ),
-                const Text(
-                  'nand for other purpose discribed in',
+                  'Your personal data will be used to \nprocess your order, support your \nexperience throughout this website \nand for other purpose discribed in',
                   style: TextStyle(color: Colors.white),
                 ),
                 Row(
@@ -233,10 +237,12 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                     Text(
                       'Privacy policy',
                       style: TextStyle(color: Colors.blue),
-                    )
+                    ),
                   ],
                 ),
-                const SizedBox(height: 10,),
+                const SizedBox(
+                  height: 10,
+                ),
                 Row(
                   children: [
                     Checkbox(
@@ -253,8 +259,13 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 8,),
-                RoundedButton(colour: Colors.blue, title: 'PLACE ORDER', onPressed:(){}),
+                const SizedBox(
+                  height: 8,
+                ),
+                RoundedButton(
+                    colour: Colors.blue,
+                    title: 'PLACE ORDER',
+                    onPressed: () {}),
               ],
             ),
           ),
