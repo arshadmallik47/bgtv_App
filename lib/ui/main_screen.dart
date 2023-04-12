@@ -28,40 +28,36 @@ class _MainScreenState extends State<MainScreen> {
       PersistentBottomNavBarItem(
         activeColorPrimary: const Color.fromRGBO(100, 198, 248, 1),
         inactiveColorPrimary: const Color.fromRGBO(130, 131, 131, 1),
-       // textStyle: const TextStyle(fontSize: 17),
+        // textStyle: const TextStyle(fontSize: 17),
         icon: const Icon(
           Icons.smart_display,
-         
         ),
         title: 'Explore',
       ),
       PersistentBottomNavBarItem(
-        activeColorPrimary:const Color.fromRGBO(100, 198, 248, 1),
+        activeColorPrimary: const Color.fromRGBO(100, 198, 248, 1),
         inactiveColorPrimary: const Color.fromRGBO(130, 131, 131, 1),
-       // textStyle: const TextStyle(fontSize: 17),
+        // textStyle: const TextStyle(fontSize: 17),
         icon: const Icon(
           Icons.search,
-          
         ),
         title: 'Search',
       ),
       PersistentBottomNavBarItem(
         activeColorPrimary: const Color.fromRGBO(100, 198, 248, 1),
-        inactiveColorPrimary:const Color.fromRGBO(130, 131, 131, 1),
-       // textStyle: const TextStyle(fontSize: 17),
+        inactiveColorPrimary: const Color.fromRGBO(130, 131, 131, 1),
+        // textStyle: const TextStyle(fontSize: 17),
         icon: const Icon(
           Icons.card_giftcard_outlined,
-          
         ),
         title: 'Giveaways',
       ),
       PersistentBottomNavBarItem(
         activeColorPrimary: const Color.fromRGBO(100, 198, 248, 1),
         inactiveColorPrimary: const Color.fromRGBO(130, 131, 131, 1),
-       // textStyle: const TextStyle(fontSize: 13),
+        // textStyle: const TextStyle(fontSize: 13),
         icon: const Icon(
           Icons.account_box_sharp,
-        
         ),
         title: 'profile',
       ),
@@ -74,7 +70,6 @@ class _MainScreenState extends State<MainScreen> {
       backgroundColor: Colors.white,
       // appBar: AppBarDesign(),
       body: PersistentTabView(
-      
         context,
         screens: _buildScreen(),
         items: _navBarItem(),

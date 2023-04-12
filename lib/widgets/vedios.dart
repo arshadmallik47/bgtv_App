@@ -6,6 +6,8 @@ class MakeVideoCategory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final mediaQuery = MediaQuery.of(context);
+
     return InkWell(
       onTap: () {
         Navigator.push(
@@ -18,11 +20,10 @@ class MakeVideoCategory extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10),
         height: 130,
-        width: 165,
+        width: mediaQuery.size.width * 0.44,
         decoration: const BoxDecoration(
           color: Colors.white,
-          image: DecorationImage(
-              image: AssetImage('assets/images/image2.jpg'), fit: BoxFit.cover),
+          image: DecorationImage(image: AssetImage('assets/images/image2.jpg'), fit: BoxFit.cover),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
@@ -30,8 +31,7 @@ class MakeVideoCategory extends StatelessWidget {
           children: [
             const Text(
               'BF Paling Sial !!!',
-              style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
             ),
             const SizedBox(
               height: 10,

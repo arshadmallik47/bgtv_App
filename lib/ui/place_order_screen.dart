@@ -38,10 +38,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
               children: [
                 const Text(
                   'Your Order',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16),
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
                 ),
                 const SizedBox(
                   height: 15,
@@ -146,8 +143,12 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                 Row(
                   children: [
                     Radio(
-                      activeColor: Colors.amber,
                       fillColor: MaterialStateProperty.all(Colors.blue),
+                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      visualDensity: const VisualDensity(
+                        horizontal: VisualDensity.minimumDensity,
+                        vertical: VisualDensity.minimumDensity,
+                      ),
                       value: 'value1',
                       groupValue: selector,
                       onChanged: (value) {
@@ -167,24 +168,33 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                   width: 280,
                   color: Colors.white,
                 ),
-                const Icon(
-                  Icons.arrow_drop_up,
-                  color: Colors.white,
-                  size: 30,
-                ),
-                Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                  height: 40,
-                  width: 220,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: const Text(
-                    'Pay securely with FPX.',
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
+                SizedBox(
+                  height: 100,
+                  width: 200,
+                  child: Stack(
+                    alignment: Alignment.topLeft,
+                    children: [
+                      Positioned(
+                        top: 20,
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                          height: 40,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(5),
+                          ),
+                          child: const Text(
+                            'Pay securely with FPX.',
+                            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ),
+                      const Icon(
+                        Icons.arrow_drop_up,
+                        color: Colors.white,
+                        size: 30,
+                      ),
+                    ],
                   ),
                 ),
                 Row(
@@ -262,10 +272,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                 const SizedBox(
                   height: 8,
                 ),
-                RoundedButton(
-                    colour: Colors.blue,
-                    title: 'PLACE ORDER',
-                    onPressed: () {}),
+                RoundedButton(colour: Colors.blue, title: 'PLACE ORDER', onPressed: () {}),
               ],
             ),
           ),

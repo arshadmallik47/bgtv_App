@@ -82,7 +82,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const MainScreen (),
+                      builder: (context) => const MainScreen(),
                     ),
                   );
                 },
@@ -91,21 +91,23 @@ class _LoginScreenState extends State<LoginScreen> {
             Padding(
               padding: const EdgeInsets.only(left: 25, right: 20),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Checkbox(
-                    side: const BorderSide(color: Colors.white),
-                    value: isChecked,
-                    onChanged: (value) {
-                      isChecked = !isChecked;
-                      setState(() {});
-                    },
-                  ),
-                  const Text(
-                    'Remember me',
-                    style: TextStyle(color: Colors.white60),
-                  ),
-                  const SizedBox(
-                    width: 105,
+                  Row(
+                    children: [
+                      Checkbox(
+                        side: const BorderSide(color: Colors.white),
+                        value: isChecked,
+                        onChanged: (value) {
+                          isChecked = !isChecked;
+                          setState(() {});
+                        },
+                      ),
+                      const Text(
+                        'Remember me',
+                        style: TextStyle(color: Colors.white60),
+                      ),
+                    ],
                   ),
                   InkWell(
                     onTap: () {},

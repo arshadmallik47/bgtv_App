@@ -27,9 +27,8 @@ class ExplorePage extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 12),
               height: 200,
-              width: 320,
+              width: double.infinity,
               decoration: const BoxDecoration(
-                color: Colors.amber,
                 image: DecorationImage(
                   image: AssetImage('assets/images/image3.jpg'),
                   fit: BoxFit.cover,
@@ -41,10 +40,7 @@ class ExplorePage extends StatelessWidget {
                 children: [
                   const Text(
                     'Awek Batak RXZ ?',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold),
+                    style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
                     height: 15,
@@ -95,11 +91,9 @@ class ExplorePage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 12.0, right: 12.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
                 MakeVideoCategory(),
-                SizedBox(
-                  width: 5,
-                ),
                 MakeVideoCategory(),
               ],
             ),
@@ -111,8 +105,7 @@ class ExplorePage extends StatelessWidget {
             padding: EdgeInsets.only(top: 12, left: 12, bottom: 5),
             child: Text(
               'Behind The Scene & Deleted Scene',
-              style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
             ),
           ),
           const SizedBox(
@@ -121,11 +114,9 @@ class ExplorePage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 12.0, right: 12.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
                 MakeVideoCategory(),
-                SizedBox(
-                  width: 5,
-                ),
                 MakeVideoCategory(),
               ],
             ),
