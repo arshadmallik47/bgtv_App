@@ -1,4 +1,4 @@
-import 'package:bgtv/ui/pages/explore_page.dart';
+import 'package:bgtv/ui/pages/explore%20_page/explore_page.dart';
 import 'package:bgtv/ui/pages/give_aways_page.dart';
 import 'package:bgtv/ui/pages/profile_page.dart';
 import 'package:bgtv/ui/pages/search_page.dart';

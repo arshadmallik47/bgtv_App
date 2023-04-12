@@ -89,7 +89,9 @@ class ExplorePage extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 5,),
+          const SizedBox(
+            height: 5,
+          ),
           Padding(
             padding: const EdgeInsets.only(left: 12.0, right: 12.0),
             child: Row(
@@ -106,24 +108,27 @@ class ExplorePage extends StatelessWidget {
             height: 8,
           ),
           const Padding(
-            padding: EdgeInsets.only(top: 12, left: 12,bottom: 5),
+            padding: EdgeInsets.only(top: 12, left: 12, bottom: 5),
             child: Text(
               'Behind The Scene & Deleted Scene',
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold
-              ),
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
             ),
           ),
-          const SizedBox(height: 5,),
-          
+          const SizedBox(
+            height: 5,
+          ),
           Padding(
             padding: const EdgeInsets.only(left: 12.0, right: 12.0),
-            child: Row(children:const [
-              MakeVideoCategory(),
-              SizedBox(width: 5,),
-              MakeVideoCategory(),
-            ],),
+            child: Row(
+              children: const [
+                MakeVideoCategory(),
+                SizedBox(
+                  width: 5,
+                ),
+                MakeVideoCategory(),
+              ],
+            ),
           ),
         ],
       ),
