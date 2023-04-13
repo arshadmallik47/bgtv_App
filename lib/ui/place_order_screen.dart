@@ -13,6 +13,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
   String? selector;
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       backgroundColor: Colors.black,
       body: Column(
@@ -30,7 +31,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
           ),
           Container(
             padding: const EdgeInsets.only(left: 25, top: 15, right: 25),
-            height: 610,
+            height:610,
             width: 330,
             decoration: BoxDecoration(border: Border.all(color: Colors.white)),
             child: Column(
@@ -157,28 +158,43 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                         });
                       },
                     ),
+                    const SizedBox(width: 5,),
                     const Text(
                       'Online Banking',
                       style: TextStyle(color: Colors.white),
                     ),
                   ],
                 ),
+                
                 Container(
-                  height: 20,
+                
+                  margin: const EdgeInsets.only(top: 8),
+                  height: 25,
                   width: 280,
-                  color: Colors.white,
+                  color: Colors.blue,
+                  child: Row(
+                    children: [
+                      Container(
+                       padding: EdgeInsets.only(left: 5),
+                        width: 140,
+                        child: Text('Pay With toyyibPay', style: TextStyle(color: Colors.white),),
+                      ),
+                      
+                    ],
+                  ),
                 ),
                 SizedBox(
-                  height: 100,
+                  height: 75,
                   width: 200,
                   child: Stack(
                     alignment: Alignment.topLeft,
                     children: [
                       Positioned(
                         top: 20,
+                        
                         child: Container(
                           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                          height: 40,
+                          //height: 40,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(5),
@@ -199,8 +215,13 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                 ),
                 Row(
                   children: [
-                    Radio(
-                      fillColor: MaterialStateProperty.all(Colors.white),
+                 Radio(
+                      fillColor: MaterialStateProperty.all(Colors.blue),
+                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      visualDensity: const VisualDensity(
+                        horizontal: VisualDensity.minimumDensity,
+                        vertical: VisualDensity.minimumDensity,
+                      ),
                       value: 'value2',
                       groupValue: selector,
                       onChanged: (value) {
@@ -209,12 +230,15 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                         });
                       },
                     ),
+                    const SizedBox(width: 5,),
                     const Text(
                       'Credit Card (Stripe)',
                       style: TextStyle(color: Colors.white),
                     ),
                   ],
                 ),
+                const SizedBox(height: 8,),
+
                 // const Text(
                 //   'Your personal data will be used to',
                 //   style: TextStyle(color: Colors.white),
@@ -256,6 +280,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                 Row(
                   children: [
                     Checkbox(
+                      
                       side: const BorderSide(color: Colors.white),
                       value: isChecked,
                       onChanged: (value) {
@@ -270,7 +295,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                   ],
                 ),
                 const SizedBox(
-                  height: 8,
+                  height: 15,
                 ),
                 RoundedButton(colour: Colors.blue, title: 'PLACE ORDER', onPressed: () {}),
               ],

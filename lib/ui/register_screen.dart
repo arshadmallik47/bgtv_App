@@ -106,16 +106,15 @@ class RegisterScreen extends StatelessWidget {
               height: 8,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 25),
+              padding: const EdgeInsets.only(left: 28,right: 28),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
                   Text(
                     '• Min 8 Characters',
                     style: TextStyle(color: Colors.white),
                   ),
-                  SizedBox(
-                    width: 28,
-                  ),
+
                   Text(
                     '• Upper-case & lower-case',
                     style: TextStyle(color: Colors.white),

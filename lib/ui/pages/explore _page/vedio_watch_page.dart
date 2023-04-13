@@ -27,32 +27,40 @@ class WatchToVideo extends StatelessWidget {
                   child: Row(
                     //mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.end,
-                    children: const [
-                      Icon(
-                        Icons.play_arrow,
-                        color: Colors.white,
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Icon(
-                        Icons.volume_up,
-                        color: Colors.white,
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Icon(
-                        Icons.settings,
-                        color: Colors.white,
-                      ),
-                      SizedBox(
-                        width: 140,
-                      ),
-                      Icon(
-                        Icons.zoom_out_map,
-                        color: Colors.white,
-                      ),
+                    children: [
+                      IconButton(
+                       
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.play_arrow,
+                          color: Colors.white,
+                        ),
+                      )
+                      // Icon(
+                      //   Icons.play_arrow,
+                      //   color: Colors.white,
+                      // ),
+                      // SizedBox(
+                      //   width: 15,
+                      // ),
+                      // Icon(
+                      //   Icons.volume_up,
+                      //   color: Colors.white,
+                      // ),
+                      // SizedBox(
+                      //   width: 15,
+                      // ),
+                      // Icon(
+                      //   Icons.settings,
+                      //   color: Colors.white,
+                      // ),
+                      // SizedBox(
+                      //   width: 140,
+                      // ),
+                      // Icon(
+                      //   Icons.zoom_out_map,
+                      //   color: Colors.white,
+                      // ),
                     ],
                   ),
                 ),
@@ -262,16 +270,18 @@ class WatchToVideo extends StatelessWidget {
                       decoration: const BoxDecoration(
                         color: Colors.amber,
                         image: DecorationImage(
-                          image: AssetImage('assets/images/image1.jpg'),
-                          fit: BoxFit.cover
-                        ),
+                            image: AssetImage('assets/images/image1.jpg'),
+                            fit: BoxFit.cover),
                       ),
                     ),
                     const Padding(
                       padding: EdgeInsets.all(10.0),
                       child: Text(
-                      
-                        'Bawa Balk Awek \nDari Club ?', style: TextStyle(color: Colors.white, fontSize: 16),),
+                        'Bawa Balk Awek \nDari Club ?',
+                        style: TextStyle(color: Colors.white, fontSize: 18),
+                      ),
+                    ),
+                    IconButton(onPressed: (){}, icon: const Icon(Icons.more_vert, color: Colors.white,),
                     )
                   ],
                 ),
