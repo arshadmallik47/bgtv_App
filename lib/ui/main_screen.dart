@@ -1,6 +1,6 @@
 import 'package:bgtv/ui/pages/explore%20_page/explore_page.dart';
 import 'package:bgtv/ui/pages/give_aways_page.dart';
-import 'package:bgtv/ui/pages/profile_page.dart';
+import 'package:bgtv/ui/pages/profile_page/profile_page.dart';
 import 'package:bgtv/ui/pages/search_page.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';

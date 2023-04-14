@@ -18,7 +18,7 @@ class WatchToVideo extends StatelessWidget {
                   height: 200,
                   width: 335,
                   decoration: const BoxDecoration(
-                    color: Colors.amber,
+                  
                     image: DecorationImage(
                       image: AssetImage('assets/images/image1.jpg'),
                       fit: BoxFit.cover,
