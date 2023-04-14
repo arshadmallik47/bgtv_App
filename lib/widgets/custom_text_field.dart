@@ -99,8 +99,8 @@ class CustomTextField extends StatelessWidget {
           border: InputBorder.none,
           hintText: hintText,
           // contentPadding: contentPadding ??
-              // Spacing.symmetric(
-              //     horizontal: SizeConfig.size20, vertical: SizeConfig.size20),
+          //     const EdgeInsets.symmetric(
+          //         horizontal:10, vertical: 8),
           hintStyle: hintStyle ??
               Theme.of(context).textTheme.titleMedium!.copyWith(
                     color: hintTextColor,
@@ -110,7 +110,7 @@ class CustomTextField extends StatelessWidget {
               ? Container(
                   width: 10,
                   height: 10,
-                 // margin: Spacing.only(top: 2, bottom: 2, right: 7),
+                 // margin: EdgeInsets.only(top: 2, bottom: 2, right: 7),
                   decoration: BoxDecoration(
                       color: colorScheme.secondary, shape: BoxShape.circle),
                   child: Center(
