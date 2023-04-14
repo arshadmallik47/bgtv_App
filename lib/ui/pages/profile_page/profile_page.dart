@@ -1,5 +1,5 @@
 import 'package:bgtv/ui/pages/profile_page/widgets/view_selector%20_widget.dart';
-import 'package:bgtv/widgets/custom_text_field.dart';
+
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -48,7 +48,9 @@ class ProfilePage extends StatelessWidget {
             child: Text(
               'Hello hariff ',
               style: TextStyle(
-                  color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17),
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 17),
             ),
           ),
           Padding(
@@ -79,7 +81,9 @@ class ProfilePage extends StatelessWidget {
             child: Text(
               'Member since Febuary 28, 2023',
               style: TextStyle(
-                  color: Colors.black, fontSize: 17, fontWeight: FontWeight.w500),
+                  color: Colors.black,
+                  fontSize: 17,
+                  fontWeight: FontWeight.w500),
             ),
           ),
           Container(
@@ -97,43 +101,36 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
           Container(
-            
             padding: const EdgeInsets.only(left: 10),
             margin: const EdgeInsets.symmetric(horizontal: 30),
-            
-            
             height: 80,
-            
             color: Colors.black54,
             child: Column(
               children: [
                 Row(
-                 
-                  
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     ViewSelectorWidget(
                       onTap: () {},
                       title: 'Dashboard',
                       icon: Icons.home,
-                     // height: 40,
+                      // height: 40,
                     ),
                     ViewSelectorWidget(
                       onTap: () {},
                       title: 'Profile details',
                       icon: Icons.person,
-                     // height: 40,
+                      // height: 40,
                     )
                   ],
                 ),
                 Row(
-                
                   children: [
                     ViewSelectorWidget(
                       onTap: () {},
                       title: 'Subscriptions',
                       icon: Icons.notifications,
-                     // height: 45,
+                      // height: 45,
                     ),
                     ViewSelectorWidget(
                       onTap: () {},
@@ -146,36 +143,125 @@ class ProfilePage extends StatelessWidget {
               ],
             ),
           ),
-          
           Container(
-          
-            padding: const EdgeInsets.only(left: 35,top: 5, right: 80),
+            padding: const EdgeInsets.only(left: 35, top: 5, right: 60, bottom: 10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children:const [
-                   Text('Edit Your account', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),),
-                   SizedBox(height: 8,),
-                Text('*Email', style: TextStyle(color: Colors.black,fontWeight: FontWeight.w500),),
-                CustomTextField(
-                  
-                
-                )
-                // Container(
-                  
-                //   height: 35,
-                //   width: double.infinity,
-                //   decoration: BoxDecoration(
-                //     border: Border.all(color: Colors.black)
-                //   ),
-                //   child: TextField(
-                //     decoration: InputDecoration(
-                      
-                //     ),
-                //   ),
-                // ),
+              children: [
+                const Text(
+                  'Edit Your account',
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.w500),
+                ),
+                const SizedBox(
+                  height: 8,
+                ),
+
+                const Text(
+                  '*Email',
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.w500),
+                ),
+                Container(
+                  height: 35,
+                  width: double.infinity,
+                  child: TextFormField(
+                    readOnly: false,
+                    decoration: InputDecoration(border: OutlineInputBorder()),
+                  ),
+                ),
+                const Text(
+                  '*First Name',
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.w500),
+                ),
+
+                Container(
+                  height: 35,
+                  width: double.infinity,
+                  child: TextFormField(
+                    readOnly: false,
+                    decoration: InputDecoration(border: OutlineInputBorder()),
+                  ),
+                ),
+
+                const Text(
+                  '*Last Name',
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.w500),
+                ),
+                Container(
+                  height: 35,
+                  width: double.infinity,
+                  child: TextFormField(
+                    readOnly: false,
+                    decoration: InputDecoration(border: OutlineInputBorder()),
+                  ),
+                ),
+
+                const Text(
+                  '*Phone',
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.w500),
+                ),
+                Container(
+                  height: 35,
+                  width: double.infinity,
+                  child: TextFormField(
+                    decoration: InputDecoration(border: OutlineInputBorder()),
+                  ),
+                ),
+
+                 const Text(
+                  '*Password',
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.w500),
+                ),
+                Container(
+                  height: 35,
+                  width: double.infinity,
+                  child: TextFormField(
+                    decoration: InputDecoration(border: OutlineInputBorder()),
+                  ),
+                ),
+
+                 const Text(
+                  '*Confirm Password',
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.w500),
+                ),
+                Container(
+                  height: 35,
+                  width: double.infinity,
+                  child: TextFormField(
+                    decoration: InputDecoration(border: OutlineInputBorder()),
+                  ),
+                ),
+
               ],
             ),
           ),
+           Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+             children: [
+               Container(
+                
+                alignment: Alignment.center,
+                margin: const EdgeInsets.only(right: 60, top: 10, bottom: 20),
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                height: 30,
+                width: 120,
+                child: const Text(
+                  'SAVE CHANGES',
+                  style: TextStyle(color: Colors.white),
+                ),
+          ),
+             ],
+           ),
+
         ],
       ),
     );
