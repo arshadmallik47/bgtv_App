@@ -1,4 +1,5 @@
-
+import 'package:bgtv/ui/pages/profile_page/widgets/view_selector%20_widget.dart';
+import 'package:bgtv/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -6,97 +7,177 @@ class ProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Container(
-          margin: const EdgeInsets.only(top: 50),
-          height: 100,
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/images/applogo.png'),
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            margin: const EdgeInsets.only(top: 50),
+            height: 100,
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/images/applogo.png'),
+              ),
             ),
           ),
-        ),
-        Container(
-          height: 60,
-          width: 60,
-          margin: const EdgeInsets.only(left: 45, top: 20),
-          decoration: BoxDecoration(
-            color: Colors.grey,
-            // color: const Color.fromRGBO(
-            //   130,
-            //   131,
-            //   131,
-            //   1,
-            // ),
-            borderRadius: BorderRadius.circular(35),
+          Container(
+            height: 60,
+            width: 60,
+            margin: const EdgeInsets.only(left: 40, top: 20),
+            decoration: BoxDecoration(
+              color: Colors.grey,
+              // color: const Color.fromRGBO(
+              //   130,
+              //   131,
+              //   131,
+              //   1,
+              // ),
+              borderRadius: BorderRadius.circular(35),
+            ),
+            child: const Icon(
+              Icons.person_2,
+              size: 60,
+              color: Colors.white,
+            ),
           ),
-          child: const Icon(
-            Icons.person_2,
-            size: 60,
-            color: Colors.white,
+          const Padding(
+            padding: EdgeInsets.only(
+              top: 10,
+              left: 40,
+            ),
+            child: Text(
+              'Hello hariff ',
+              style: TextStyle(
+                  color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17),
+            ),
           ),
-        ),
-        const Padding(
-          padding: EdgeInsets.only(
-            top: 10,
-            left: 45,
+          Padding(
+            padding: const EdgeInsets.only(left: 40),
+            child: Row(
+              children: const [
+                Text(
+                  'You are logged as ',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 17,
+                      fontWeight: FontWeight.w500),
+                ),
+                Text(
+                  'hariffmajid',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 17,
+                      fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
           ),
-          child: Text(
-            'Hello hariff ',
-            style: TextStyle(
-                color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17),
+          const Padding(
+            padding: EdgeInsets.only(
+              left: 40,
+            ),
+            child: Text(
+              'Member since Febuary 28, 2023',
+              style: TextStyle(
+                  color: Colors.black, fontSize: 17, fontWeight: FontWeight.w500),
+            ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(left: 45),
-          child: Row(
-            children: const [
-              Text(
-                'You are logged as ',
-                style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 17,
-                    fontWeight: FontWeight.w500),
-              ),
-              Text(
-                'hariffmajid',
-                style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 17,
-                    fontWeight: FontWeight.bold),
-              )
-            ],
+          Container(
+            alignment: Alignment.center,
+            margin: const EdgeInsets.only(left: 35, top: 10, bottom: 20),
+            decoration: BoxDecoration(
+              color: Colors.green,
+              borderRadius: BorderRadius.circular(8),
+            ),
+            height: 30,
+            width: 135,
+            child: const Text(
+              'Bros Membership',
+              style: TextStyle(color: Colors.white),
+            ),
           ),
-        ),
-        const Padding(
-          padding: EdgeInsets.only(
-            left: 45,
+          Container(
+            
+            padding: const EdgeInsets.only(left: 10),
+            margin: const EdgeInsets.symmetric(horizontal: 30),
+            
+            
+            height: 80,
+            
+            color: Colors.black54,
+            child: Column(
+              children: [
+                Row(
+                 
+                  
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    ViewSelectorWidget(
+                      onTap: () {},
+                      title: 'Dashboard',
+                      icon: Icons.home,
+                     // height: 40,
+                    ),
+                    ViewSelectorWidget(
+                      onTap: () {},
+                      title: 'Profile details',
+                      icon: Icons.person,
+                     // height: 40,
+                    )
+                  ],
+                ),
+                Row(
+                
+                  children: [
+                    ViewSelectorWidget(
+                      onTap: () {},
+                      title: 'Subscriptions',
+                      icon: Icons.notifications,
+                     // height: 45,
+                    ),
+                    ViewSelectorWidget(
+                      onTap: () {},
+                      title: ' support',
+                      icon: Icons.help_outline,
+                      //height: 45,
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
-          child: Text(
-            'Member since Febuary 28, 2023',
-            style: TextStyle(
-                color: Colors.black, fontSize: 17, fontWeight: FontWeight.w500),
+          
+          Container(
+          
+            padding: const EdgeInsets.only(left: 35,top: 5, right: 80),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children:const [
+                   Text('Edit Your account', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),),
+                   SizedBox(height: 8,),
+                Text('*Email', style: TextStyle(color: Colors.black,fontWeight: FontWeight.w500),),
+                CustomTextField(
+                  
+                
+                )
+                // Container(
+                  
+                //   height: 35,
+                //   width: double.infinity,
+                //   decoration: BoxDecoration(
+                //     border: Border.all(color: Colors.black)
+                //   ),
+                //   child: TextField(
+                //     decoration: InputDecoration(
+                      
+                //     ),
+                //   ),
+                // ),
+              ],
+            ),
           ),
-        ),
-        Container(
-          alignment: Alignment.center,
-          margin: const EdgeInsets.only(left: 40, top: 10, bottom: 20),
-          decoration: BoxDecoration(
-            color: Colors.green,
-            borderRadius: BorderRadius.circular(8),
-          ),
-          height: 30,
-          width: 135,
-          child: const Text(
-            'Bros Membership',
-            style: TextStyle(color: Colors.white),
-          ),
-        ),
-
-      ],
+        ],
+      ),
     );
   }
 }
