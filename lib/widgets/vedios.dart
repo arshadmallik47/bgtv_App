@@ -1,5 +1,8 @@
-import 'package:bgtv/ui/pages/explore%20_page/vedio_watch_page.dart';
+
 import 'package:flutter/material.dart';
+
+//import '../ui/pages/explore _page/video_watch_page..dart';
+import '../ui/pages/explore _page/video_watch_page.dart';
 
 class MakeVideoCategory extends StatelessWidget {
   const MakeVideoCategory({super.key});
