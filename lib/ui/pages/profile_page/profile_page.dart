@@ -101,6 +101,7 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
           Container(
+            
             padding: const EdgeInsets.only(left: 10),
             margin: const EdgeInsets.symmetric(horizontal: 30),
             height: 80,
@@ -108,6 +109,7 @@ class ProfilePage extends StatelessWidget {
             child: Column(
               children: [
                 Row(
+                  
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     ViewSelectorWidget(
@@ -162,12 +164,12 @@ class ProfilePage extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.black, fontWeight: FontWeight.w500),
                 ),
-                Container(
+                SizedBox(
                   height: 35,
                   width: double.infinity,
                   child: TextFormField(
                     readOnly: false,
-                    decoration: InputDecoration(border: OutlineInputBorder()),
+                    decoration: const InputDecoration(border: OutlineInputBorder()),
                   ),
                 ),
                 const Text(
@@ -176,12 +178,12 @@ class ProfilePage extends StatelessWidget {
                       color: Colors.black, fontWeight: FontWeight.w500),
                 ),
 
-                Container(
+                SizedBox(
                   height: 35,
                   width: double.infinity,
                   child: TextFormField(
                     readOnly: false,
-                    decoration: InputDecoration(border: OutlineInputBorder()),
+                    decoration: const InputDecoration(border: OutlineInputBorder()),
                   ),
                 ),
 
@@ -190,12 +192,12 @@ class ProfilePage extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.black, fontWeight: FontWeight.w500),
                 ),
-                Container(
+                SizedBox(
                   height: 35,
                   width: double.infinity,
                   child: TextFormField(
                     readOnly: false,
-                    decoration: InputDecoration(border: OutlineInputBorder()),
+                    decoration: const InputDecoration(border: OutlineInputBorder()),
                   ),
                 ),
 
@@ -204,11 +206,11 @@ class ProfilePage extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.black, fontWeight: FontWeight.w500),
                 ),
-                Container(
+                SizedBox(
                   height: 35,
                   width: double.infinity,
                   child: TextFormField(
-                    decoration: InputDecoration(border: OutlineInputBorder()),
+                    decoration: const InputDecoration(border: OutlineInputBorder()),
                   ),
                 ),
 
@@ -217,11 +219,11 @@ class ProfilePage extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.black, fontWeight: FontWeight.w500),
                 ),
-                Container(
+                SizedBox(
                   height: 35,
                   width: double.infinity,
                   child: TextFormField(
-                    decoration: InputDecoration(border: OutlineInputBorder()),
+                    decoration: const InputDecoration(border: OutlineInputBorder()),
                   ),
                 ),
 
@@ -230,11 +232,11 @@ class ProfilePage extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.black, fontWeight: FontWeight.w500),
                 ),
-                Container(
+                SizedBox(
                   height: 35,
                   width: double.infinity,
                   child: TextFormField(
-                    decoration: InputDecoration(border: OutlineInputBorder()),
+                    decoration: const InputDecoration(border: OutlineInputBorder()),
                   ),
                 ),
 

@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:bgtv/widgets/watch_vedio.dart';
 import 'package:flutter/material.dart';
 
@@ -19,24 +21,57 @@ class WatchToVideo extends StatelessWidget {
                   height: 200,
                   width: 335,
                   decoration: const BoxDecoration(
-                  
                     image: DecorationImage(
                       image: AssetImage('assets/images/image1.jpg'),
                       fit: BoxFit.cover,
                     ),
                   ),
                   child: Row(
-                    //mainAxisAlignment: MainAxisAlignment.spaceAround,
+                   // mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       IconButton(
-                       
+                        constraints: const BoxConstraints(maxHeight: 32),
                         onPressed: () {},
                         icon: const Icon(
                           Icons.play_arrow,
                           color: Colors.white,
                         ),
-                      )
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                         constraints: const BoxConstraints(maxHeight: 32),
+                        icon: const Icon(
+                          Icons.volume_up,
+                          color: Colors.white,
+                        ),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        constraints: const BoxConstraints(maxHeight: 32),
+                        icon: const Icon(
+                          Icons.settings,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(width: 110,),
+                      IconButton(
+                        constraints: BoxConstraints(maxHeight: 32),
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.zoom_out_map,
+                          color: Colors.white,
+                        ),
+
+                      ),
+                      Image.asset(
+                      
+                        'assets/images/bgtvlogo.png', width: 60, height: 25,)
+                      // Container(
+                      //   decoration: BoxDecoration(
+                      //     image: DecorationImage(image: AssetImage('assets/images/applogo.png'))
+                      //   ),
+                      // )
                       // Icon(
                       //   Icons.play_arrow,
                       //   color: Colors.white,
@@ -260,35 +295,8 @@ class WatchToVideo extends StatelessWidget {
                   ),
                 ),
               ),
-              WatchvideoCategory(),
-              WatchvideoCategory(),
-              // Padding(
-              //   padding: const EdgeInsets.all(8.0),
-              //   child: Row(
-              //     crossAxisAlignment: CrossAxisAlignment.start,
-              //     children: [
-              //       Container(
-              //         height: 90,
-              //         width: 140,
-              //         decoration: const BoxDecoration(
-              //           color: Colors.amber,
-              //           image: DecorationImage(
-              //               image: AssetImage('assets/images/image1.jpg'),
-              //               fit: BoxFit.cover),
-              //         ),
-              //       ),
-              //       const Padding(
-              //         padding: EdgeInsets.all(10.0),
-              //         child: Text(
-              //           'Bawa Balk Awek \nDari Club ?',
-              //           style: TextStyle(color: Colors.white, fontSize: 18),
-              //         ),
-              //       ),
-              //       IconButton(onPressed: (){}, icon: const Icon(Icons.more_vert, color: Colors.white,),
-              //       )
-              //     ],
-              //   ),
-              // )
+              const WatchvideoCategory(),
+              const WatchvideoCategory(),
             ],
           ),
         ),
