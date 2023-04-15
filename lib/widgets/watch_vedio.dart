@@ -14,7 +14,7 @@ class WatchvideoCategory extends StatelessWidget {
             height: 90,
             width: 140,
             decoration: const BoxDecoration(
-              color: Colors.amber,
+              
               image: DecorationImage(
                   image: AssetImage('assets/images/image1.jpg'),
                   fit: BoxFit.cover),

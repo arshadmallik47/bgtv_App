@@ -5,14 +5,14 @@ import 'package:flutter/material.dart';
 class ViewSelectorWidget extends StatelessWidget {
   const ViewSelectorWidget({
     required this.onTap,
-    // required this.selected,
+     required this.selected,
     required this.title,
     this.height,
     this.width,
     super.key, required this.icon,
   });
 
-  //final bool selected;
+  final bool selected;
   final String title;
   final double? height;
   final double? width;
@@ -30,10 +30,10 @@ class ViewSelectorWidget extends StatelessWidget {
           onTap: onTap,
           child: Container(
             width: width,
-            height: height ?? 36,
+            height: height ?? 25,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              // color: selected ? colorScheme.secondary : Colors.black54,
+             color: selected ?  Colors.black : Colors.black26,
             ),
             child: Row(
               children: [
