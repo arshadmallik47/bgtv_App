@@ -5,6 +5,25 @@ class SupportView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Padding(
+      padding: const EdgeInsets.only(top: 30,left: 15, right: 15),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: const [
+          Text(
+            'Our Support',
+            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            'if you have any questions or need help, please do not hesitate to \ncontact us via contact@brosgangworldwide.com or chat our',
+            style: TextStyle(color: Colors.black, fontSize: 11, fontWeight: FontWeight.w500),
+          ),
+          Text('Whatsapp support', style: TextStyle(color: Colors.blue),)
+        ],
+      ),
+    );
   }
 }

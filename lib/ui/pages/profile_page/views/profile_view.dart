@@ -105,7 +105,7 @@ class ProfilePageView extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(right: 50, bottom: 15),
+            padding: const EdgeInsets.only( bottom: 10, top: 15),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
