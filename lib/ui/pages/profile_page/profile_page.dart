@@ -109,9 +109,9 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
           Container(
-            padding: const EdgeInsets.only(left: 10, top: 10,bottom: 10),
-            margin: const EdgeInsets.symmetric(horizontal: 15),
-            height: 80,
+            padding: const EdgeInsets.all(5),
+            margin: const EdgeInsets.symmetric(horizontal: 10),
+            height: 70,
             color: Colors.black54,
             child: SingleChildScrollView(
               child: Column(
