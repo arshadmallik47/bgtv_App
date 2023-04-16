@@ -6,7 +6,7 @@ class ProfilePageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(left: 35, top: 5, right: 50, bottom: 10),
+      padding: const EdgeInsets.only(left: 25, top: 5, right: 50, bottom: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

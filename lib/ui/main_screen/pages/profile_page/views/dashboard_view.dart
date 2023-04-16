@@ -104,7 +104,7 @@ class DashboardView extends StatelessWidget {
                     fontSize: 12),
               ),
               Text(
-                'BGTV community Group',
+                'BGTV Community Group',
                 style: TextStyle(color: Colors.blue, fontSize: 12),
               ),
             ],
