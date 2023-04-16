@@ -1,13 +1,13 @@
-import 'package:bgtv/ui/pages/profile_page/views/dashboard_view.dart';
-import 'package:bgtv/ui/pages/profile_page/views/profile_view.dart';
-import 'package:bgtv/ui/pages/profile_page/views/subscription_view.dart';
-import 'package:bgtv/ui/pages/profile_page/views/support_view.dart';
-import 'package:bgtv/ui/pages/profile_page/widgets/view_selector%20_widget.dart';
+import 'package:bgtv/ui/main_screen/pages/profile_page/views/dashboard_view.dart';
+import 'package:bgtv/ui/main_screen/pages/profile_page/views/profile_view.dart';
+import 'package:bgtv/ui/main_screen/pages/profile_page/views/subscription_view.dart';
+import 'package:bgtv/ui/main_screen/pages/profile_page/views/support_view.dart';
+import 'package:bgtv/ui/main_screen/pages/profile_page/widgets/view_selector%20_widget.dart';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../core/profile_provider.dart';
+import '../../../../core/provider.dart/profile_provider.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});

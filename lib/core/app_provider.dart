@@ -1,6 +1,6 @@
 
 
-import 'package:bgtv/core/profile_provider.dart';
+import 'package:bgtv/core/provider.dart/profile_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 //import '../ui/pages/explore _page/video_watch_page..dart';
-import '../ui/pages/explore _page/video_watch_page.dart';
+import '../ui/main_screen/pages/explore _page/video_watch_page.dart';
 
 class MakeVideoCategory extends StatelessWidget {
   const MakeVideoCategory({super.key});

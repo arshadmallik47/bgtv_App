@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:bgtv/ui/login_screen.dart';
+import 'package:bgtv/ui/login_screen/login_screen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
