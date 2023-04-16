@@ -43,6 +43,7 @@ class RegisterScreen extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 28, right: 28),
               child: CustomTextField(
+                textStyle: TextStyle(color: Colors.black),
                 hintTextColor: Colors.black26,
                 keyboardType: TextInputType.emailAddress,
                 // controller: emailController,
@@ -56,6 +57,7 @@ class RegisterScreen extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 28, right: 28),
               child: CustomTextField(
+                textStyle: TextStyle(color: Colors.black),
                 hintTextColor: Colors.black26,
                 keyboardType: TextInputType.text,
                 // controller: emailController,
@@ -69,6 +71,7 @@ class RegisterScreen extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 28, right: 28),
               child: CustomTextField(
+                textStyle: TextStyle(color: Colors.black),
                 hintTextColor: Colors.black26,
                 keyboardType: TextInputType.emailAddress,
                 // controller: emailController,
@@ -82,6 +85,7 @@ class RegisterScreen extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 28, right: 28),
               child: CustomTextField(
+                textStyle: TextStyle(color: Colors.black),
                 hintTextColor: Colors.black26,
                 keyboardType: TextInputType.number,
                 // controller: emailController,
@@ -95,9 +99,10 @@ class RegisterScreen extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 28, right: 28),
               child: CustomTextField(
+                textStyle: TextStyle(color: Colors.black),
                 hintTextColor: Colors.black26,
 
-                // controller: emailController,
+              
                 enableBorder: false,
                 hintText: 'Password',
               ),
