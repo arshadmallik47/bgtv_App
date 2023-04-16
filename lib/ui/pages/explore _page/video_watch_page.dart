@@ -1,4 +1,4 @@
-import 'dart:ui';
+
 
 import 'package:bgtv/widgets/watch_vedio.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +19,7 @@ class WatchToVideo extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 22, right: 5, top: 15),
                 child: Container(
                   height: 200,
-                  width: 335,
+                  width: double.infinity,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage('assets/images/image1.jpg'),
@@ -54,7 +54,7 @@ class WatchToVideo extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(width: 110,),
+                      const SizedBox(width: 110,),
                       IconButton(
                         constraints: BoxConstraints(maxHeight: 32),
                         onPressed: () {},
@@ -67,36 +67,7 @@ class WatchToVideo extends StatelessWidget {
                       Image.asset(
                       
                         'assets/images/bgtvlogo.png', width: 60, height: 25,)
-                      // Container(
-                      //   decoration: BoxDecoration(
-                      //     image: DecorationImage(image: AssetImage('assets/images/applogo.png'))
-                      //   ),
-                      // )
-                      // Icon(
-                      //   Icons.play_arrow,
-                      //   color: Colors.white,
-                      // ),
-                      // SizedBox(
-                      //   width: 15,
-                      // ),
-                      // Icon(
-                      //   Icons.volume_up,
-                      //   color: Colors.white,
-                      // ),
-                      // SizedBox(
-                      //   width: 15,
-                      // ),
-                      // Icon(
-                      //   Icons.settings,
-                      //   color: Colors.white,
-                      // ),
-                      // SizedBox(
-                      //   width: 140,
-                      // ),
-                      // Icon(
-                      //   Icons.zoom_out_map,
-                      //   color: Colors.white,
-                      // ),
+
                     ],
                   ),
                 ),
@@ -228,7 +199,7 @@ class WatchToVideo extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
+              Container(
                 padding: const EdgeInsets.only(
                   left: 8,
                 ),

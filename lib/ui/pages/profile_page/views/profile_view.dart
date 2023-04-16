@@ -21,6 +21,7 @@ class ProfilePageView extends StatelessWidget {
             '*Email',
             style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
           ),
+          const SizedBox(height: 3,),
           SizedBox(
             height: 35,
             width: double.infinity,
@@ -32,10 +33,13 @@ class ProfilePageView extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(height: 5,),
+          
           const Text(
             '*First Name',
             style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
           ),
+          const SizedBox(height: 3,),
           SizedBox(
             height: 35,
             width: double.infinity,
@@ -47,10 +51,12 @@ class ProfilePageView extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(height: 8,),
           const Text(
             '*Last Name',
             style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
           ),
+          const SizedBox(height: 3,),
           SizedBox(
             height: 35,
             width: double.infinity,
@@ -62,10 +68,12 @@ class ProfilePageView extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(height: 8,),
           const Text(
             '*Phone',
             style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
           ),
+          const SizedBox(height: 3,),
           SizedBox(
             height: 35,
             width: double.infinity,
@@ -76,10 +84,12 @@ class ProfilePageView extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(height: 8,),
           const Text(
             '*Password',
             style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
           ),
+          const SizedBox(height: 3,),
           SizedBox(
             height: 35,
             width: double.infinity,
@@ -90,10 +100,12 @@ class ProfilePageView extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(height: 8,),
           const Text(
             '*Confirm Password',
             style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
           ),
+          const SizedBox(height: 3,),
           SizedBox(
             height: 35,
             width: double.infinity,

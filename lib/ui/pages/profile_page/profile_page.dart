@@ -20,9 +20,11 @@ class ProfilePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            margin: const EdgeInsets.only(top: 50),
-            height: 100,
+          
+            margin: const EdgeInsets.only(top: 50, left: 12, right: 12),
+            height: 120,
             decoration: const BoxDecoration(
+              color: Colors.black,
               image: DecorationImage(
                 image: AssetImage('assets/images/applogo.png'),
               ),
@@ -110,9 +112,9 @@ class ProfilePage extends StatelessWidget {
           ),
           Container(
             padding: const EdgeInsets.all(5),
-            margin: const EdgeInsets.symmetric(horizontal: 10),
+            margin: const EdgeInsets.symmetric(horizontal: 20),
             height: 70,
-            color: Colors.black54,
+            color: Colors.black,
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -157,7 +159,7 @@ class ProfilePage extends StatelessWidget {
                           profileProvider.updateView(ProfileView.support);
                         },
                         selected: profileProvider.selectedView == ProfileView.support,
-                        title: ' support',
+                        title: ' Support',
                         icon: Icons.help_outline,
                         //height: 45,
                       ),

@@ -10,14 +10,16 @@ class WatchvideoCategory extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            height: 90,
-            width: 140,
-            decoration: const BoxDecoration(
-              
-              image: DecorationImage(
-                  image: AssetImage('assets/images/image1.jpg'),
-                  fit: BoxFit.cover),
+          Expanded(
+            child: Container(
+              height: 90,
+              width: 140,
+              decoration: const BoxDecoration(
+                
+                image: DecorationImage(
+                    image: AssetImage('assets/images/image1.jpg'),
+                    fit: BoxFit.cover),
+              ),
             ),
           ),
           const Padding(

@@ -88,8 +88,9 @@ class SubscriptionView extends StatelessWidget {
                   TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 100, top: 10,),
+          Container(
+                 alignment:Alignment.center,
+            //padding: const EdgeInsets.only(left: 100, top: 10,),
             child: ElevatedButton(
               
               style: ButtonStyle(
