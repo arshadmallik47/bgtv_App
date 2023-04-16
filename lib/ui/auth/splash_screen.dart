@@ -35,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
           height: 200,
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/images/bgtvlogo.png'),
+              image: AssetImage('assets/images/applogo.png'),
             ),
           ),
         ),
