@@ -1,7 +1,7 @@
 import 'package:bgtv/ui/main_screen/pages/explore%20_page/explore_page.dart';
-import 'package:bgtv/ui/main_screen/pages/give_aways_page.dart';
+import 'package:bgtv/ui/main_screen/pages/forum_page.dart';
 import 'package:bgtv/ui/main_screen/pages/profile_page/profile_page.dart';
-import 'package:bgtv/ui/main_screen/pages/search_page.dart';
+import 'package:bgtv/ui/main_screen/pages/feed_page.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
@@ -17,8 +17,8 @@ class _MainScreenState extends State<MainScreen> {
   List<Widget> _buildScreen() {
     return [
       const ExplorePage(),
-      const SearchPage(),
-      const GiveawaysPage(),
+      const FeedPage(),
+      const ForumPage(),
       const ProfilePage(),
     ];
   }
