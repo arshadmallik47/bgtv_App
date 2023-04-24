@@ -39,18 +39,19 @@ class _MainScreenState extends State<MainScreen> {
         inactiveColorPrimary: const Color.fromRGBO(130, 131, 131, 1),
         // textStyle: const TextStyle(fontSize: 17),
         icon: const Icon(
-          Icons.search,
+          Icons.home,
         ),
-        title: 'Search',
+        title: 'Feed',
       ),
       PersistentBottomNavBarItem(
         activeColorPrimary: const Color.fromRGBO(100, 198, 248, 1),
         inactiveColorPrimary: const Color.fromRGBO(130, 131, 131, 1),
         // textStyle: const TextStyle(fontSize: 17),
         icon: const Icon(
-          Icons.card_giftcard_outlined,
+          Icons.add_box_outlined,
+         // Icons.card_giftcard_outlined,
         ),
-        title: 'Giveaways',
+        title: 'Forum',
       ),
       PersistentBottomNavBarItem(
         activeColorPrimary: const Color.fromRGBO(100, 198, 248, 1),
