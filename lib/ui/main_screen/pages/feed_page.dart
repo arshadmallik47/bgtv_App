@@ -21,22 +21,30 @@ class FeedPage extends StatelessWidget {
         ],
         leading: IconButton(
           padding: EdgeInsets.only(left: 30),
-          onPressed: (){}, icon: Icon(Icons.card_giftcard_outlined, color: Colors.white,)),
+          onPressed: (){}, icon: Icon(Icons.card_giftcard_outlined, color: Colors.white,),),
           ),
           SizedBox(height: 10,),
-          Text('BGTV Feed', style: TextStyle(color: Colors.white, fontSize:25, fontWeight: FontWeight.bold ),),
+          Text('BGTV Feed', style: TextStyle(color: Colors.white, fontSize:20, fontWeight: FontWeight.bold ),),
           SizedBox(height: 10,),
           Container(
-            margin: EdgeInsets.only(left: 62, right: 6),
+            margin: EdgeInsets.only(left: 45, right: 45),
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage('assets/images/image2.jpg'), fit:BoxFit.cover)
+              image: DecorationImage(image: AssetImage('assets/images/image4.jpg'), fit:BoxFit.cover)
             ),
             height: 260,
             width: double.infinity,
            // color: Colors.amber,
           ),
-          SizedBox(height: 10,),
-          Text('BGTV Admin This is behind the scene', style: TextStyle(color: Colors.white),)
+          
+          Padding(
+            padding: const EdgeInsets.only(top: 10, left: 45, ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Text('BGTV Admin This is behind the scene', style: TextStyle(color: Colors.white),),
+              ],
+            ),
+          )
         ],
       ),
     );
