@@ -1,12 +1,14 @@
+
+
 import 'package:flutter/material.dart';
 
-class WatchvideoCategory extends StatelessWidget {
-  const WatchvideoCategory({super.key});
+class SearchVideo extends StatelessWidget {
+  const SearchVideo({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
+      return Padding(
+      padding: const EdgeInsets.all(5.0),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -22,13 +24,14 @@ class WatchvideoCategory extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(width: 5,),
           Padding(
             padding: EdgeInsets.all(5),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'BF Paling Sial !!!!',
+                  'Bawa Balk Awek Dari club ?',
                   style: TextStyle(color: Colors.white, fontSize: 17),
                 ),
                 SizedBox(
@@ -53,13 +56,7 @@ class WatchvideoCategory extends StatelessWidget {
               ],
             ),
           ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.more_vert,
-              color: Colors.white,
-            ),
-          ),
+         
         ],
       ),
     );

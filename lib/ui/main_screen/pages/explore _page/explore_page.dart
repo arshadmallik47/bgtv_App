@@ -1,3 +1,5 @@
+import 'package:bgtv/ui/main_screen/pages/give_aways_page/giveaways_page.dart';
+import 'package:bgtv/ui/main_screen/pages/search_page/search_page.dart';
 import 'package:bgtv/widgets/vedios.dart';
 import 'package:flutter/material.dart';
 
@@ -6,40 +8,53 @@ class ExplorePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-       
     return Scaffold(
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-              AppBar(
-            backgroundColor: Colors.black,
-            title: Image.asset(
-              'assets/images/applogo.png',
-              height: 120,
-            ),
-            centerTitle: true,
-            actions: [
-              IconButton(
-                padding: EdgeInsets.only(right: 30),
-                onPressed: () {},
+            AppBar(
+              backgroundColor: Colors.black,
+              title: Image.asset(
+                'assets/images/applogo.png',
+                height: 120,
+              ),
+              centerTitle: true,
+              actions: [
+                IconButton(
+                  padding: EdgeInsets.only(right: 30),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SearchPage(),
+                      ),
+                    );
+                  },
+                  icon: Icon(
+                    Icons.search,
+                    size: 30,
+                    color: Colors.white,
+                  ),
+                )
+              ],
+              leading: IconButton(
+                padding: EdgeInsets.only(left: 30),
+                onPressed: () {
+                   Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => GiveawaysPage(),
+                      ),
+                    );
+                },
                 icon: Icon(
-                  Icons.search,
-                  size: 30,
+                  Icons.card_giftcard_outlined,
                   color: Colors.white,
                 ),
-              )
-            ],
-            leading: IconButton(
-              padding: EdgeInsets.only(left: 30),
-              onPressed: () {},
-              icon: Icon(
-                Icons.card_giftcard_outlined,
-                color: Colors.white,
               ),
             ),
-          ),
             const SizedBox(
               height: 10,
             ),
@@ -56,8 +71,7 @@ class ExplorePage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 12),
               height: 320,
               width: double.infinity,
-              decoration:  BoxDecoration(
-
+              decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/image3.jpg'),
                   fit: BoxFit.cover,
@@ -70,7 +84,10 @@ class ExplorePage extends StatelessWidget {
                 children: [
                   const Text(
                     'Awek Batak RXZ ?',
-                    style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
                     height: 15,
@@ -105,7 +122,10 @@ class ExplorePage extends StatelessWidget {
               height: 8,
             ),
             const Padding(
-              padding: EdgeInsets.only(top: 8.0, left: 12.0, ),
+              padding: EdgeInsets.only(
+                top: 8.0,
+                left: 12.0,
+              ),
               child: Text(
                 'Exclusive Series (All)',
                 style: TextStyle(
@@ -114,24 +134,26 @@ class ExplorePage extends StatelessWidget {
                 ),
               ),
             ),
-            
-            
+
             Container(
-              padding: EdgeInsets.only(left: 12.0, top: 15,),
+              padding: EdgeInsets.only(
+                left: 12.0,
+                top: 15,
+              ),
               height: 130,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-                MakeVideoCategory(),
-                MakeVideoCategory(),
-                MakeVideoCategory(),
-                MakeVideoCategory()
-              ],),
+                  MakeVideoCategory(),
+                  MakeVideoCategory(),
+                  MakeVideoCategory(),
+                  MakeVideoCategory()
+                ],
+              ),
             ),
             const SizedBox(
               height: 8,
             ),
-            
           ],
         ),
       ),
