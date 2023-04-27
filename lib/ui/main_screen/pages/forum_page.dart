@@ -1,3 +1,5 @@
+import 'package:bgtv/ui/main_screen/pages/give_aways_page/giveaways_page.dart';
+import 'package:bgtv/ui/main_screen/pages/search_page/search_page.dart';
 import 'package:flutter/material.dart';
 
 class ForumPage extends StatelessWidget {
@@ -23,7 +25,14 @@ class ForumPage extends StatelessWidget {
             actions: [
               IconButton(
                 padding: EdgeInsets.only(right: 30),
-                onPressed: () {},
+                onPressed: () {
+                   Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SearchPage(),
+                      ),
+                    );
+                },
                 icon: Icon(
                   Icons.search,
                   size: 30,
@@ -33,7 +42,14 @@ class ForumPage extends StatelessWidget {
             ],
             leading: IconButton(
               padding: EdgeInsets.only(left: 30),
-              onPressed: () {},
+              onPressed: () {
+                 Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => GiveawaysPage(),
+                      ),
+                    );
+              },
               icon: Icon(
                 Icons.card_giftcard_outlined,
                 color: Colors.white,

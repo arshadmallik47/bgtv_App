@@ -12,24 +12,27 @@ class ProfilePageView extends StatelessWidget {
         children: [
           const Text(
             'Edit Your account',
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
           ),
           const SizedBox(
             height: 8,
           ),
           const Text(
             '*Email',
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
           ),
           const SizedBox(height: 3,),
           SizedBox(
             height: 35,
             width: double.infinity,
             child: TextFormField(
+              style: TextStyle(color: Colors.white),
               readOnly: false,
               decoration: const InputDecoration(
-                focusedBorder: OutlineInputBorder(),
-                border: OutlineInputBorder(),
+                focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+               
+                enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+              
               ),
             ),
           ),
@@ -37,82 +40,92 @@ class ProfilePageView extends StatelessWidget {
           
           const Text(
             '*First Name',
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
           ),
           const SizedBox(height: 3,),
           SizedBox(
             height: 35,
             width: double.infinity,
             child: TextFormField(
+              style: TextStyle(color: Colors.white),
               readOnly: false,
               decoration: const InputDecoration(
-                focusedBorder: OutlineInputBorder(),
-                border: OutlineInputBorder(),
+                focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+                enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+              
               ),
             ),
           ),
           const SizedBox(height: 8,),
           const Text(
             '*Last Name',
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
           ),
           const SizedBox(height: 3,),
           SizedBox(
             height: 35,
             width: double.infinity,
             child: TextFormField(
+              style: TextStyle(color: Colors.white),
               readOnly: false,
               decoration: const InputDecoration(
-                focusedBorder: OutlineInputBorder(),
-                border: OutlineInputBorder(),
+                focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+                enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+              
               ),
             ),
           ),
           const SizedBox(height: 8,),
           const Text(
             '*Phone',
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
           ),
           const SizedBox(height: 3,),
           SizedBox(
             height: 35,
             width: double.infinity,
             child: TextFormField(
+              style: TextStyle(color: Colors.white),
               decoration: const InputDecoration(
-                focusedBorder: OutlineInputBorder(),
-                border: OutlineInputBorder(),
+                 focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+                 enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+                
               ),
             ),
           ),
           const SizedBox(height: 8,),
           const Text(
             '*Password',
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
           ),
           const SizedBox(height: 3,),
           SizedBox(
             height: 35,
             width: double.infinity,
             child: TextFormField(
+              style: TextStyle(color: Colors.white),
               decoration: const InputDecoration(
-                focusedBorder: OutlineInputBorder(),
-                border: OutlineInputBorder(),
+                focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+                enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+              
               ),
             ),
           ),
           const SizedBox(height: 8,),
           const Text(
             '*Confirm Password',
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
           ),
           const SizedBox(height: 3,),
           SizedBox(
             height: 35,
             width: double.infinity,
             child: TextFormField(
+              style: TextStyle(color: Colors.white),
               decoration: const InputDecoration(
-                focusedBorder: OutlineInputBorder(),
-                border: OutlineInputBorder(),
+                 focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+                 enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+               
               ),
             ),
           ),
@@ -133,7 +146,6 @@ class ProfilePageView extends StatelessWidget {
       ),
     );
 
-    //],
-    //);
+    
   }
 }

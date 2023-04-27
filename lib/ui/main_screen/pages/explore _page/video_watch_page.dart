@@ -1,5 +1,3 @@
-
-
 import 'package:bgtv/widgets/watch_vedio.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +25,7 @@ class WatchToVideo extends StatelessWidget {
                     ),
                   ),
                   child: Row(
-                   // mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    // mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       IconButton(
@@ -40,7 +38,7 @@ class WatchToVideo extends StatelessWidget {
                       ),
                       IconButton(
                         onPressed: () {},
-                         constraints: const BoxConstraints(maxHeight: 32),
+                        constraints: const BoxConstraints(maxHeight: 32),
                         icon: const Icon(
                           Icons.volume_up,
                           color: Colors.white,
@@ -54,7 +52,11 @@ class WatchToVideo extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
-                      const SizedBox(width: 110,),
+                      // const SizedBox(
+                      //   width: 110,
+                      // ),
+
+                      Spacer(),
                       IconButton(
                         constraints: BoxConstraints(maxHeight: 32),
                         onPressed: () {},
@@ -62,12 +64,12 @@ class WatchToVideo extends StatelessWidget {
                           Icons.zoom_out_map,
                           color: Colors.white,
                         ),
-
                       ),
                       Image.asset(
-                      
-                        'assets/images/bgtvlogo.png', width: 60, height: 25,)
-
+                        'assets/images/bgtvlogo.png',
+                        width: 60,
+                        height: 25,
+                      )
                     ],
                   ),
                 ),
@@ -81,8 +83,9 @@ class WatchToVideo extends StatelessWidget {
                   'Dedah Pelacuran',
                   style: TextStyle(
                     color: Colors.white,
+                    fontFamily: 'MonumentExtended',
                     fontWeight: FontWeight.bold,
-                    fontSize: 25,
+                    fontSize: 20,
                   ),
                 ),
               ),
@@ -94,7 +97,9 @@ class WatchToVideo extends StatelessWidget {
                       'BGTV | 31 March 2023',
                       style: TextStyle(
                         color: Colors.white,
-                        fontWeight: FontWeight.bold,
+                        fontSize: 10,
+                        // fontWeight: FontWeight.bold,
+                        fontFamily: 'MonumentExtended',
                       ),
                     ),
                     IconButton(
@@ -107,7 +112,11 @@ class WatchToVideo extends StatelessWidget {
                     const Text(
                       '122 Comments',
                       style: TextStyle(
-                          color: Colors.white, fontWeight: FontWeight.bold),
+                        color: Colors.white,
+                        //fontWeight: FontWeight.bold,
+                        fontSize: 10,
+                        fontFamily: 'MonumentExtended',
+                      ),
                     ),
                   ],
                 ),
@@ -115,9 +124,13 @@ class WatchToVideo extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.only(left: 22),
                 child: Text(
-                  '122 Coments',
+                  '122 Comments',
                   style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
+                    color: Colors.white,
+                    fontSize: 10,
+                    // fontWeight: FontWeight.bold,
+                    fontFamily: 'MonumentExtended',
+                  ),
                 ),
               ),
               const Padding(
@@ -133,7 +146,10 @@ class WatchToVideo extends StatelessWidget {
                   children: const [
                     Text(
                       'Newest',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'MonumentExtended',
+                          fontSize: 10),
                     ),
                     Icon(
                       Icons.arrow_drop_down,
@@ -175,15 +191,20 @@ class WatchToVideo extends StatelessWidget {
                       'Admin BGTV',
                       style: TextStyle(
                           color: Colors.white,
+                          fontFamily: 'MonumentExtended',
                           // fontWeight: FontWeight.w500,
-                          fontSize: 18),
+                          fontSize: 14),
                     ),
                     SizedBox(
                       width: 18,
                     ),
                     Text(
                       '21 hours ago',
-                      style: TextStyle(color: Colors.white, fontSize: 10),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 8,
+                        fontFamily: 'MonumentExtended',
+                      ),
                     )
                   ],
                 ),
@@ -194,8 +215,9 @@ class WatchToVideo extends StatelessWidget {
                   'Nice Video Brosgang !!!!',
                   style: TextStyle(
                     color: Colors.white,
+                    fontFamily: 'MonumentExtended',
                     // fontWeight: FontWeight.w500,
-                    fontSize: 20,
+                    fontSize: 15,
                   ),
                 ),
               ),
@@ -220,7 +242,7 @@ class WatchToVideo extends StatelessWidget {
                     ),
                     const Text(
                       '3',
-                      style: TextStyle(color: Colors.white, fontSize: 18),
+                      style: TextStyle(color: Colors.white, fontSize: 15,fontFamily: 'MonumentExtended',),
                     ),
                     IconButton(
                       onPressed: () {},
@@ -251,7 +273,7 @@ class WatchToVideo extends StatelessWidget {
                         ),
                         label: const Text(
                           'Reply',
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended',fontSize: 13),
                         )),
                   ],
                 ),
@@ -262,7 +284,8 @@ class WatchToVideo extends StatelessWidget {
                   'Up Next',
                   style: TextStyle(
                     color: Colors.white,
-                    fontWeight: FontWeight.bold,
+                   //fontWeight: FontWeight.bold,
+                    fontFamily: 'MonumentExtended',
                   ),
                 ),
               ),

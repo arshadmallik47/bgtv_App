@@ -32,7 +32,8 @@ class RegisterScreen extends StatelessWidget {
                 'Create Account Details',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 30,
+                  fontFamily: 'MonumentExtended',
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -44,11 +45,12 @@ class RegisterScreen extends StatelessWidget {
               padding: EdgeInsets.only(left: 28, right: 28),
               child: CustomTextField(
                 textStyle: TextStyle(color: Colors.black),
-                hintTextColor: Colors.black26,
+                hintTextColor: Colors.black12,
                 keyboardType: TextInputType.emailAddress,
                 // controller: emailController,
                 enableBorder: false,
                 hintText: 'Fullname',
+                hintStyle: TextStyle(fontFamily: 'MonumentExtended', fontSize: 12,),
               ),
             ),
             const SizedBox(
@@ -63,6 +65,7 @@ class RegisterScreen extends StatelessWidget {
                 // controller: emailController,
                 enableBorder: false,
                 hintText: 'Email',
+                  hintStyle: TextStyle(fontFamily: 'MonumentExtended', fontSize: 12,),
               ),
             ),
             const SizedBox(
@@ -77,6 +80,7 @@ class RegisterScreen extends StatelessWidget {
                 // controller: emailController,
                 enableBorder: false,
                 hintText: 'Phone',
+                  hintStyle: TextStyle(fontFamily: 'MonumentExtended', fontSize: 12,),
               ),
             ),
             const SizedBox(
@@ -91,6 +95,7 @@ class RegisterScreen extends StatelessWidget {
                 // controller: emailController,
                 enableBorder: false,
                 hintText: 'Username',
+                  hintStyle: TextStyle(fontFamily: 'MonumentExtended', fontSize: 12,),
               ),
             ),
             const SizedBox(
@@ -101,28 +106,26 @@ class RegisterScreen extends StatelessWidget {
               child: CustomTextField(
                 textStyle: TextStyle(color: Colors.black),
                 hintTextColor: Colors.black26,
-
-              
                 enableBorder: false,
                 hintText: 'Password',
+                  hintStyle: TextStyle(fontFamily: 'MonumentExtended', fontSize: 12,),
               ),
             ),
             const SizedBox(
               height: 8,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 28,right: 28),
+              padding: const EdgeInsets.only(left: 28, right: 28),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
                   Text(
                     '• Min 8 Characters',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.white, fontFamily: 'MonumentExtended', fontSize: 8),
                   ),
-
                   Text(
                     '• Upper-case & lower-case',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended',fontSize: 8),
                   )
                 ],
               ),
@@ -134,7 +137,7 @@ class RegisterScreen extends StatelessWidget {
               padding: const EdgeInsets.only(left: 28, right: 28),
               child: RoundedButton(
                 colour: Colors.blue,
-                title: 'Continue',
+                title: 'continue',
                 onPressed: () {
                   Navigator.push(
                     context,

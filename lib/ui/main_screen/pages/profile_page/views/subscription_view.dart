@@ -27,7 +27,7 @@ class SubscriptionView extends StatelessWidget {
             child: Text(
               'Subscription - Daily',
               style:
-                  TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
             ),
           ),
           const Padding(
@@ -35,7 +35,7 @@ class SubscriptionView extends StatelessWidget {
             child: Text(
               'RM20.00 for 60 days',
               style:
-                  TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
             ),
           ),
           const Padding(
@@ -43,7 +43,7 @@ class SubscriptionView extends StatelessWidget {
             child: Text(
               '_',
               style: TextStyle(
-                color: Colors.black,
+                color: Colors.white,
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -53,7 +53,7 @@ class SubscriptionView extends StatelessWidget {
             child: Text(
               'No',
               style:
-                  TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
             ),
           ),
           const Padding(
@@ -61,7 +61,7 @@ class SubscriptionView extends StatelessWidget {
             child: Text(
               'Yes - 7 days after',
               style:
-                  TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
             ),
           ),
           const Padding(
@@ -69,7 +69,7 @@ class SubscriptionView extends StatelessWidget {
             child: Text(
               'expires',
               style:
-                  TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
             ),
           ),
           const Padding(
@@ -77,7 +77,7 @@ class SubscriptionView extends StatelessWidget {
             child: Text(
               'Febuary 26, 2023 - April, 2023',
               style:
-                  TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
             ),
           ),
           const Padding(
@@ -85,7 +85,7 @@ class SubscriptionView extends StatelessWidget {
             child: Text(
               'Active',
               style:
-                  TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
             ),
           ),
           Container(
@@ -95,7 +95,7 @@ class SubscriptionView extends StatelessWidget {
               
               style: ButtonStyle(
             
-                backgroundColor: MaterialStateProperty.all(Colors.black26)
+                backgroundColor: MaterialStateProperty.all(Colors.white)
               ),
               onPressed: () {},
               child: const Text(

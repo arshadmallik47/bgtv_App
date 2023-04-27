@@ -58,14 +58,7 @@ class ExplorePage extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            // Container(
-            //   height: 120,
-            //   decoration: const BoxDecoration(
-            //     image: DecorationImage(
-            //       image: AssetImage('assets/images/applogo.png'),
-            //     ),
-            //   ),
-            // ),
+          
             Container(
               margin: EdgeInsets.only(left: 12, right: 15),
               padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -130,7 +123,8 @@ class ExplorePage extends StatelessWidget {
                 'Exclusive Series (All)',
                 style: TextStyle(
                   color: Colors.white,
-                  fontWeight: FontWeight.bold,
+                 // fontWeight: FontWeight.bold,
+                  fontFamily: 'MonumentExtended',
                 ),
               ),
             ),

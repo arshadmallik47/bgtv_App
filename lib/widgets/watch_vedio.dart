@@ -29,7 +29,7 @@ class WatchvideoCategory extends StatelessWidget {
               children: [
                 Text(
                   'BF Paling Sial !!!!',
-                  style: TextStyle(color: Colors.white, fontSize: 17),
+                  style: TextStyle(color: Colors.white, fontSize: 12 ,fontFamily: 'MonumentExtended',),
                 ),
                 SizedBox(
                   height: 5,
@@ -46,7 +46,7 @@ class WatchvideoCategory extends StatelessWidget {
                     ),
                     Text(
                       'Watch Now',
-                      style: TextStyle(color: Colors.white, fontSize: 10),
+                      style: TextStyle(color: Colors.white, fontSize: 8,fontFamily: 'MonumentExtended',),
                     ),
                   ],
                 ),

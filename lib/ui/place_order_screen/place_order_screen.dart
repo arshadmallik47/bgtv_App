@@ -1,8 +1,6 @@
 import 'package:bgtv/widgets/rounded_button.dart';
 import 'package:flutter/material.dart';
 
-
-
 class PlaceOrderScreen extends StatefulWidget {
   const PlaceOrderScreen({super.key});
 
@@ -15,7 +13,6 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
   String? selector;
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       backgroundColor: Colors.black,
       body: Column(
@@ -33,15 +30,18 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
           ),
           Container(
             padding: const EdgeInsets.only(left: 25, top: 15, right: 25),
-            height:610,
+            height: 610,
             width: 330,
             decoration: BoxDecoration(border: Border.all(color: Colors.white)),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  'Your Order',
-                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
+                  'Your order',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16),
                 ),
                 const SizedBox(
                   height: 15,
@@ -160,16 +160,17 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                         });
                       },
                     ),
-                    const SizedBox(width: 5,),
+                    const SizedBox(
+                      width: 5,
+                    ),
                     const Text(
                       'Online Banking',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white, fontFamily: 'MonumentExtended',fontSize: 10),
                     ),
                   ],
                 ),
-                
+
                 Container(
-                
                   margin: const EdgeInsets.only(top: 8),
                   height: 25,
                   width: 280,
@@ -177,25 +178,27 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                   child: Row(
                     children: [
                       Container(
-                       padding: const EdgeInsets.only(left: 5),
+                        padding: const EdgeInsets.only(left: 5),
                         width: 140,
-                        child: const Text('Pay With toyyibPay', style: TextStyle(color: Colors.white),),
+                        child: const Text(
+                          'Pay With toyyibPay',
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
-                      
                     ],
                   ),
                 ),
                 SizedBox(
                   height: 75,
-                  width: 200,
+                  width: 220,
                   child: Stack(
                     alignment: Alignment.topLeft,
                     children: [
                       Positioned(
                         top: 20,
-                        
                         child: Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 12),
                           //height: 40,
                           decoration: BoxDecoration(
                             color: Colors.white,
@@ -203,7 +206,11 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                           ),
                           child: const Text(
                             'Pay securely with FPX.',
-                            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                            
+                            style: TextStyle(
+                                color: Colors.black,
+                                //fontWeight: FontWeight.bold,
+                                fontFamily: 'MonumentExtended',fontSize: 10),
                           ),
                         ),
                       ),
@@ -217,7 +224,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                 ),
                 Row(
                   children: [
-                 Radio(
+                    Radio(
                       fillColor: MaterialStateProperty.all(Colors.blue),
                       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                       visualDensity: const VisualDensity(
@@ -232,31 +239,24 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                         });
                       },
                     ),
-                    const SizedBox(width: 5,),
+                    const SizedBox(
+                      width: 5,
+                    ),
                     const Text(
                       'Credit Card (Stripe)',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 10,
+                        fontFamily: 'MonumentExtended',
+                      ),
                     ),
                   ],
                 ),
-                const SizedBox(height: 8,),
+                const SizedBox(
+                  height: 8,
+                ),
 
-                // const Text(
-                //   'Your personal data will be used to',
-                //   style: TextStyle(color: Colors.white),
-                // ),
-                // const Text(
-                //   'process your order, support your ',
-                //   style: TextStyle(color: Colors.white),
-                // ),
-                // const Text(
-                //   'experience throughout this website',
-                //   style: TextStyle(color: Colors.white),
-                // ),
-                // const Text(
-                //   'and for other purpose discribed in',
-                //   style: TextStyle(color: Colors.white),
-                // ),
+               
                 const Text(
                   'Your personal data will be used to \nprocess your order, support your \nexperience throughout this website \nand for other purpose discribed in',
                   style: TextStyle(color: Colors.white),
@@ -282,7 +282,6 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                 Row(
                   children: [
                     Checkbox(
-                      
                       side: const BorderSide(color: Colors.white),
                       value: isChecked,
                       onChanged: (value) {
@@ -299,7 +298,10 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                 const SizedBox(
                   height: 15,
                 ),
-                RoundedButton(colour: Colors.blue, title: 'PLACE ORDER', onPressed: () {}),
+                RoundedButton(
+                    colour: Colors.blue,
+                    title: 'PLACE ORDER',
+                    onPressed: () {}),
               ],
             ),
           ),

@@ -33,7 +33,7 @@ class ViewSelectorWidget extends StatelessWidget {
             height: height ?? 25,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-             color: selected ?  Colors.black : Colors.black,
+             color: selected ?  Colors.black : null,
             ),
             child: Row(
               children: [

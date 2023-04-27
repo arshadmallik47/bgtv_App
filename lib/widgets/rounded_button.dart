@@ -25,6 +25,8 @@ class RoundedButton extends StatelessWidget {
               title,
               style: const TextStyle(
                 color: Colors.white,
+                 fontFamily: 'MonumentExtended',
+
               ),
             ),
           ),
