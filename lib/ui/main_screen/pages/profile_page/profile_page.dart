@@ -26,9 +26,9 @@ class ProfilePage extends StatelessWidget {
               margin: const EdgeInsets.only(top: 50, left: 12, right: 12),
               height: 120,
               decoration: const BoxDecoration(
-                color: Colors.black,
+                color: Colors.grey,
                 image: DecorationImage(
-                  image: AssetImage('assets/images/applogo.png'),
+                  image: AssetImage('assets/images/applogo.png'), fit: BoxFit.cover,
                 ),
               ),
             ),
@@ -63,7 +63,7 @@ class ProfilePage extends StatelessWidget {
                     color: Colors.white,
                    // fontWeight: FontWeight.bold,
                   fontFamily: 'MonumentExtended',
-                    fontSize: 14),
+                    fontSize: 12),
               ),
             ),
             Padding(
@@ -83,7 +83,7 @@ class ProfilePage extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'MonumentExtended',
                         color: Colors.white,
-                        fontSize: 14,
+                        fontSize: 13,
                         ),
                   )
                 ],
@@ -99,17 +99,18 @@ class ProfilePage extends StatelessWidget {
                   fontFamily: 'MonumentExtended',
                     color: Colors.white,
                     fontSize: 12,
-                    fontWeight: FontWeight.w500),
+                   // fontWeight: FontWeight.w500,
+                    ),
               ),
             ),
             Container(
               alignment: Alignment.center,
               margin: const EdgeInsets.only(left: 35, top: 10, bottom: 20),
               decoration: BoxDecoration(
-                color: Colors.green,
+                color: Colors.blue,
                 borderRadius: BorderRadius.circular(8),
               ),
-              height: 30,
+              height: 25,
               width: 135,
               child: const Text(
                 'Bros Membership',
@@ -117,10 +118,14 @@ class ProfilePage extends StatelessWidget {
               ),
             ),
             Container(
+              decoration: BoxDecoration(
+                  color: Colors.white30,
+                  borderRadius:BorderRadius.circular(8),
+              ),
               padding: const EdgeInsets.all(5),
               margin: const EdgeInsets.symmetric(horizontal: 20),
               height: 70,
-              color: Colors.white30,
+
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
