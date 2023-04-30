@@ -6,11 +6,11 @@ class SubscriptionView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 15, left: 20, right: 20, bottom: 20),
-      height: 290,
+      margin: const EdgeInsets.only(top: 30 , left: 20, right: 20, bottom: 20),
+      height: 230,
       width: double.infinity,
       decoration: BoxDecoration(
-        border: Border.all(),
+        border: Border.all(color: Colors.white30),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -19,7 +19,7 @@ class SubscriptionView extends StatelessWidget {
             padding: EdgeInsets.all(20.0),
             child: Text(
               'Bros Membership',
-              style: TextStyle(color: Colors.blue, fontWeight: FontWeight.w500),
+              style: TextStyle(color: Colors.blue, fontWeight: FontWeight.w500, fontFamily: 'MonumentExtended',fontSize: 9),
             ),
           ),
           const Padding(
@@ -27,7 +27,7 @@ class SubscriptionView extends StatelessWidget {
             child: Text(
               'Subscription - Daily',
               style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500,fontFamily: 'MonumentExtended',fontSize: 9),
             ),
           ),
           const Padding(
@@ -35,7 +35,7 @@ class SubscriptionView extends StatelessWidget {
             child: Text(
               'RM20.00 for 60 days',
               style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500,fontFamily: 'MonumentExtended',fontSize: 9),
             ),
           ),
           const Padding(
@@ -53,7 +53,7 @@ class SubscriptionView extends StatelessWidget {
             child: Text(
               'No',
               style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500,fontFamily: 'MonumentExtended',fontSize: 9),
             ),
           ),
           const Padding(
@@ -61,7 +61,7 @@ class SubscriptionView extends StatelessWidget {
             child: Text(
               'Yes - 7 days after',
               style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontFamily: 'MonumentExtended',fontSize: 9 ),
             ),
           ),
           const Padding(
@@ -69,15 +69,15 @@ class SubscriptionView extends StatelessWidget {
             child: Text(
               'expires',
               style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontFamily: 'MonumentExtended',fontSize: 9),
             ),
           ),
           const Padding(
-            padding: EdgeInsets.only(left: 120, top: 5),
+            padding: EdgeInsets.only(left: 110, top: 5),
             child: Text(
               'Febuary 26, 2023 - April, 2023',
               style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontFamily: 'MonumentExtended',fontSize: 9),
             ),
           ),
           const Padding(
@@ -85,7 +85,7 @@ class SubscriptionView extends StatelessWidget {
             child: Text(
               'Active',
               style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontFamily: 'MonumentExtended', fontSize: 9),
             ),
           ),
           Container(
@@ -100,7 +100,7 @@ class SubscriptionView extends StatelessWidget {
               onPressed: () {},
               child: const Text(
                 'Remove',
-                style: TextStyle(color: Colors.black),
+                style: TextStyle(color: Colors.black,fontFamily: 'MonumentExtended', fontSize: 9),
               ),
             ),
           ),
