@@ -23,6 +23,7 @@ class GiveawaysPage extends StatelessWidget {
             centerTitle: true,
             actions: [
               IconButton(
+                
                 padding: EdgeInsets.only(right: 30),
                 onPressed: () {
                     Navigator.push(
@@ -33,6 +34,7 @@ class GiveawaysPage extends StatelessWidget {
                     );
                 },
                 icon: Icon(
+                  
                   Icons.search,
                   size: 30,
                   color: Colors.white,
