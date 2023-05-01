@@ -6,7 +6,7 @@ class SubscriptionView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 30 , left: 20, right: 20, bottom: 20),
+      margin: const EdgeInsets.only(top: 30, left: 20, right: 20, bottom: 20),
       height: 230,
       width: double.infinity,
       decoration: BoxDecoration(
