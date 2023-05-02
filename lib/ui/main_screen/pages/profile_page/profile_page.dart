@@ -22,13 +22,13 @@ class ProfilePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-            
               margin: const EdgeInsets.only(top: 40, left: 12, right: 12),
               height: 120,
               decoration: const BoxDecoration(
                 color: Colors.grey,
                 image: DecorationImage(
-                  image: AssetImage('assets/images/applogo.png'), fit: BoxFit.cover,
+                  image: AssetImage('assets/images/applogo.png'),
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
@@ -38,12 +38,7 @@ class ProfilePage extends StatelessWidget {
               margin: const EdgeInsets.only(left: 40, top: 20),
               decoration: BoxDecoration(
                 color: Colors.grey,
-                // color: const Color.fromRGBO(
-                //   130,
-                //   131,
-                //   131,
-                //   1,
-                // ),
+               
                 borderRadius: BorderRadius.circular(35),
               ),
               child: const Icon(
@@ -61,8 +56,8 @@ class ProfilePage extends StatelessWidget {
                 'Hello hariff ',
                 style: TextStyle(
                     color: Colors.white,
-                   // fontWeight: FontWeight.bold,
-                  fontFamily: 'MonumentExtended',
+                    // fontWeight: FontWeight.bold,
+                    fontFamily: 'MonumentExtended',
                     fontSize: 12),
               ),
             ),
@@ -73,18 +68,18 @@ class ProfilePage extends StatelessWidget {
                   Text(
                     'You are logged as ',
                     style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'MonumentExtended',
-                        fontSize: 11,
-                      ),
+                      color: Colors.white,
+                      fontFamily: 'MonumentExtended',
+                      fontSize: 11,
+                    ),
                   ),
                   Text(
                     'hariffmajid',
                     style: TextStyle(
                       fontFamily: 'MonumentExtended',
-                        color: Colors.white,
-                        fontSize: 13,
-                        ),
+                      color: Colors.white,
+                      fontSize: 13,
+                    ),
                   )
                 ],
               ),
@@ -97,35 +92,38 @@ class ProfilePage extends StatelessWidget {
                 'Member since Febuary 28, 2023',
                 style: TextStyle(
                   fontFamily: 'MonumentExtended',
-                    color: Colors.white,
-                    fontSize: 12,
-                   // fontWeight: FontWeight.w500,
-                    ),
+                  color: Colors.white,
+                  fontSize: 12,
+                  // fontWeight: FontWeight.w500,
+                ),
               ),
             ),
             Container(
               alignment: Alignment.center,
               margin: const EdgeInsets.only(left: 35, top: 10, bottom: 20),
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.indigo[400],
                 borderRadius: BorderRadius.circular(8),
               ),
               height: 25,
-              width: 135,
+              width: 160,
               child: const Text(
-                'Bros Membership',
-                style: TextStyle(color: Colors.white),
+                'Bros Memberships',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'MonumentExtended',
+                  fontSize: 10
+                ),
               ),
             ),
             Container(
               decoration: BoxDecoration(
-                  color: Colors.white30,
-                  borderRadius:BorderRadius.circular(8),
+                color: Colors.white30,
+                borderRadius: BorderRadius.circular(8),
               ),
               padding: const EdgeInsets.all(5),
               margin: const EdgeInsets.symmetric(horizontal: 20),
               height: 70,
-
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -137,30 +135,38 @@ class ProfilePage extends StatelessWidget {
                           onTap: () {
                             profileProvider.updateView(ProfileView.dashboard);
                           },
-                          selected: profileProvider.selectedView == ProfileView.dashboard,
+                          selected: profileProvider.selectedView ==
+                              ProfileView.dashboard,
                           title: 'Dashboard',
+
                           icon: Icons.home,
+
                           // height: 40,
                         ),
                         ViewSelectorWidget(
                           onTap: () {
                             profileProvider.updateView(ProfileView.profile);
                           },
-                          selected: profileProvider.selectedView == ProfileView.profile,
+                          selected: profileProvider.selectedView ==
+                              ProfileView.profile,
                           title: 'Profile details',
                           icon: Icons.person,
                           // height: 40,
                         )
                       ],
                     ),
-                    const SizedBox(height: 10,),
+                    const SizedBox(
+                      height: 10,
+                    ),
                     Row(
                       children: [
                         ViewSelectorWidget(
                           onTap: () {
-                            profileProvider.updateView(ProfileView.subscriptions);
+                            profileProvider
+                                .updateView(ProfileView.subscriptions);
                           },
-                          selected: profileProvider.selectedView == ProfileView.subscriptions,
+                          selected: profileProvider.selectedView ==
+                              ProfileView.subscriptions,
                           title: 'Subscriptions',
                           icon: Icons.notifications,
                           // height: 45,
@@ -169,24 +175,26 @@ class ProfilePage extends StatelessWidget {
                           onTap: () {
                             profileProvider.updateView(ProfileView.support);
                           },
-                          selected: profileProvider.selectedView == ProfileView.support,
+                          selected: profileProvider.selectedView ==
+                              ProfileView.support,
                           title: ' Support',
                           icon: Icons.help_outline,
                           //height: 45,
                         ),
                       ],
                     ),
-      
                   ],
                 ),
               ),
             ),
-             if (profileProvider.selectedView == ProfileView.dashboard) const DashboardView(),
-                    if (profileProvider.selectedView == ProfileView.profile) const ProfilePageView(),
-                    if (profileProvider.selectedView == ProfileView.subscriptions) const SubscriptionView(),
-                    if (profileProvider.selectedView == ProfileView.support) const SupportView(),
-          
-        
+            if (profileProvider.selectedView == ProfileView.dashboard)
+              const DashboardView(),
+            if (profileProvider.selectedView == ProfileView.profile)
+              const ProfilePageView(),
+            if (profileProvider.selectedView == ProfileView.subscriptions)
+              const SubscriptionView(),
+            if (profileProvider.selectedView == ProfileView.support)
+              const SupportView(),
           ],
         ),
       ),

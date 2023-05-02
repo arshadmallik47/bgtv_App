@@ -12,18 +12,29 @@ class DashboardView extends StatelessWidget {
         children: [
           const Text(
             'Dashboard Profile',
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            style: TextStyle(
+                color: Colors.white,
+                fontFamily: 'MonumentExtended',
+                fontSize: 10),
           ),
           const SizedBox(
             height: 10,
           ),
           const Text(
             'Welcome to our BGTV Membership platform.',
-            style: TextStyle(color: Colors.white, fontSize: 12),
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 8,
+              fontFamily: 'MonumentExtended',
+            ),
           ),
           const Text(
             'check for valuable content and sign to our subscriptions.',
-            style: TextStyle(color: Colors.white, fontSize: 12),
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 8,
+              fontFamily: 'MonumentExtended',
+            ),
           ),
           const SizedBox(
             height: 10,
@@ -32,14 +43,19 @@ class DashboardView extends StatelessWidget {
             children: const [
               Text(
                 'From Membership dashboard you may manage ',
-                style: TextStyle(color: Colors.white, fontSize: 12),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 8,
+                  fontFamily: 'MonumentExtended',
+                ),
               ),
               Text(
                 'your profile',
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
-                    fontSize: 12),
+                    fontFamily: 'MonumentExtended',
+                    fontSize: 8),
               ),
             ],
           ),
@@ -47,25 +63,36 @@ class DashboardView extends StatelessWidget {
             children: const [
               Text(
                 'check ',
-                style: TextStyle(color: Colors.white, fontSize: 12),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 8,
+                  fontFamily: 'MonumentExtended',
+                ),
               ),
               Text(
                 'recent orders ',
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
-                    fontSize: 12),
+                    fontFamily: 'MonumentExtended',
+                    fontSize: 8),
               ),
               Text(
                 'or edit your ',
-                style: TextStyle(color: Colors.white, fontSize: 12),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 8,
+                  fontFamily: 'MonumentExtended',
+                ),
               ),
               Text(
-                'account details',
+                'account details.',
                 style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 12),
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 8,
+                  fontFamily: 'MonumentExtended',
+                ),
               ),
             ],
           ),
@@ -76,11 +103,19 @@ class DashboardView extends StatelessWidget {
             children: const [
               Text(
                 'Enjoy your videos here ',
-                style: TextStyle(color: Colors.white, fontSize: 12),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 8,
+                  fontFamily: 'MonumentExtended',
+                ),
               ),
               Text(
                 'MEMBERS AREA',
-                style: TextStyle(color: Colors.blue, fontSize: 12),
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 8,
+                  fontFamily: 'MonumentExtended',
+                ),
               ),
             ],
           ),
@@ -89,7 +124,11 @@ class DashboardView extends StatelessWidget {
           ),
           const Text(
             'Thank you for your support, you are part of us!',
-            style: TextStyle(color: Colors.white, fontSize: 12),
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 8,
+              fontFamily: 'MonumentExtended',
+            ),
           ),
           const SizedBox(
             height: 10,
@@ -99,13 +138,18 @@ class DashboardView extends StatelessWidget {
               Text(
                 'Please don\'t forget to join our ',
                 style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 12),
+                  color: Colors.white,
+                  //  fontWeight: FontWeight.bold,
+                  fontSize: 8, fontFamily: 'MonumentExtended',
+                ),
               ),
               Text(
                 'BGTV Community Group',
-                style: TextStyle(color: Colors.blue, fontSize: 12),
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 8,
+                  fontFamily: 'MonumentExtended',
+                ),
               ),
             ],
           ),
@@ -113,8 +157,8 @@ class DashboardView extends StatelessWidget {
             'for updates!',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 12,
-              fontWeight: FontWeight.bold,
+              fontSize: 8, fontFamily: 'MonumentExtended',
+              // fontWeight: FontWeight.bold,
             ),
           )
         ],
