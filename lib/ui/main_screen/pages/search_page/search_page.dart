@@ -13,6 +13,7 @@ class SearchPage extends StatelessWidget {
         child: Column(
           children: [
             AppBar(
+              
               backgroundColor: Colors.black,
               title: Image.asset(
                 'assets/images/applogo.png',
@@ -21,6 +22,7 @@ class SearchPage extends StatelessWidget {
               centerTitle: true,
               actions: [
                 IconButton(
+                
                   padding: EdgeInsets.only(right: 30),
                   onPressed: () {
                       Navigator.push(

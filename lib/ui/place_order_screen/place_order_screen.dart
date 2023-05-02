@@ -21,7 +21,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
             height: 15,
           ),
           Container(
-            height: 120,
+            height: 150,
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/images/applogo.png'),
@@ -30,7 +30,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
           ),
           Container(
             padding: const EdgeInsets.only(left: 25, top: 15, right: 25),
-            height: 610,
+            height: 560,
             width: 330,
             decoration: BoxDecoration(border: Border.all(color: Colors.white)),
             child: Column(
@@ -41,7 +41,8 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 16),
+                      fontFamily: 'MonumentExtended',
+                      fontSize: 10),
                 ),
                 const SizedBox(
                   height: 15,
@@ -50,14 +51,14 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                   children: const [
                     Text(
                       'Product',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 10),
                     ),
                     SizedBox(
                       width: 142,
                     ),
                     Text(
                       'Subtotal',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white, fontFamily: 'MonumentExtended', fontSize: 10),
                     ),
                   ],
                 ),
@@ -75,14 +76,14 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                   children: const [
                     Text(
                       '2 Month Subscription x 1',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended',fontSize: 10),
                     ),
                     SizedBox(
-                      width: 37,
+                      width: 23,
                     ),
                     Text(
                       'RM20.00',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended',fontSize: 10),
                     ),
                   ],
                 ),
@@ -100,14 +101,14 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                   children: const [
                     Text(
                       'Subtotal',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended',fontSize: 10),
                     ),
                     SizedBox(
-                      width: 140,
+                      width: 142,
                     ),
                     Text(
                       'RM20.00',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended',fontSize: 10),
                     ),
                   ],
                 ),
@@ -125,14 +126,14 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                   children: const [
                     Text(
                       'Total',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended',fontSize: 10),
                     ),
                     SizedBox(
-                      width: 160,
+                      width: 168,
                     ),
                     Text(
                       'RM20.00',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended',fontSize: 10),
                     ),
                   ],
                 ),
@@ -182,7 +183,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                         width: 140,
                         child: const Text(
                           'Pay With toyyibPay',
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended',fontSize: 8),
                         ),
                       ),
                     ],
@@ -259,20 +260,21 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                
                 const Text(
                   'Your personal data will be used to \nprocess your order, support your \nexperience throughout this website \nand for other purpose discribed in',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended',fontSize: 9),
                 ),
+                SizedBox(height: 2,),
                 Row(
                   children: const [
                     Text(
                       'our',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended',fontSize: 9),
                     ),
                     SizedBox(
                       width: 5,
                     ),
                     Text(
                       'Privacy policy',
-                      style: TextStyle(color: Colors.blue),
+                      style: TextStyle(color: Colors.blue,fontFamily: 'MonumentExtended',fontSize: 9),
                     ),
                   ],
                 ),
@@ -291,14 +293,15 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                     ),
                     const Text(
                       'I have read and agree to the \nwebsite Terms & Conditions \nAgreement. *',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended',fontSize: 9),
                     ),
                   ],
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 8,
                 ),
                 RoundedButton(
+                  
                     colour: Colors.blue,
                     title: 'PLACE ORDER',
                     onPressed: () {}),
