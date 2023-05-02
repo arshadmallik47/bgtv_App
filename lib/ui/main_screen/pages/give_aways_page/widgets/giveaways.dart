@@ -14,12 +14,12 @@ class GiveawaysCategory extends StatelessWidget {
         color: Colors.amber,
         borderRadius: BorderRadius.circular(12),
         image: DecorationImage(
-            image: AssetImage('assets/images/image2.jpg'), fit: BoxFit.cover),
+            image: NetworkImage('https://imageio.forbes.com/specials-images/imageserve/643757808/0x0.jpg?format=jpg&width=1200'), fit: BoxFit.cover),
       ),
       child: Text(
         'CASH PRIZE',
         style: TextStyle(
-            color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+            color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold,fontFamily: 'MonumentExtended',),
       ),
     );
   }

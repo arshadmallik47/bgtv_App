@@ -55,12 +55,12 @@ class FeedPage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 10,
+            height: 20,
           ),
           Text(
             'BGTV Feed',
             style: TextStyle(
-                color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+                color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold, fontFamily: 'MonumentExtended',),
           ),
           SizedBox(
             height: 10,
@@ -83,8 +83,8 @@ class FeedPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(
-                  'BGTV Admin This is behind the scene',
-                  style: TextStyle(color: Colors.white),
+                  'BGTV Admin This is behind the scene.',
+                  style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 8),
                 ),
               ],
             ),

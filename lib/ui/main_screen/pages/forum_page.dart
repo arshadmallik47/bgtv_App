@@ -66,7 +66,7 @@ class ForumPage extends StatelessWidget {
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 20,
-                  fontWeight: FontWeight.bold),
+                  fontWeight: FontWeight.bold,fontFamily: 'MonumentExtended', ),
             ),
           ),
           Padding(
@@ -78,12 +78,13 @@ class ForumPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Protected by All 4 hours ago',
-                  style: TextStyle(color: Colors.white),
+                  'Posted by All 4 hours ago',
+                  style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 8),
                 ),
+                SizedBox(height: 4,),
                 Text(
-                  'My name is Ali. i have problem with my wife \nshe cheat on me. What should i do?',
-                  style: TextStyle(color: Colors.white),
+                  'My name is Ali. i have problem with my wife \nshe cheat on me. What should i do ?',
+                  style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 9),
                 ),
                 SizedBox(
                   height: 10,
@@ -98,8 +99,8 @@ class ForumPage extends StatelessWidget {
                       width: 5,
                     ),
                     Text(
-                      '14 comments',
-                      style: TextStyle(color: Colors.white),
+                      '14 comment',
+                      style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 8),
                     )
                   ],
                 ),
@@ -108,12 +109,13 @@ class ForumPage extends StatelessWidget {
                 ),
                 Text(
                   'Posted by Sarah 6 hours ago',
-                  style: TextStyle(color: Colors.white,),
+                  style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 8),
                 ),
+                SizedBox(height: 4,),
                 Text(
                   'I pregnant but my partner left me. What \nshoud i do ?',
                  
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 9),
                 ),
                  SizedBox(
                   height: 10,
@@ -128,20 +130,21 @@ class ForumPage extends StatelessWidget {
                       width: 5,
                     ),
                     Text(
-                      '14 comments',
-                      style: TextStyle(color: Colors.white),
+                      '23 comments',
+                      style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 8),
                     )
                   ],
                 ),
                 SizedBox(height: 30,),
                 Text(
                   'Posted by Abu 10 hours ago',
-                  style: TextStyle(color: Colors.white,),
+                  style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 8),
                 ),
+                SizedBox(height: 3,),
                 Text(
                   'I break with my partner yesterday ...',
                  
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 9),
                 ),
                  SizedBox(
                   height: 10,
@@ -156,19 +159,20 @@ class ForumPage extends StatelessWidget {
                       width: 5,
                     ),
                     Text(
-                      '14 comments',
-                      style: TextStyle(color: Colors.white),
+                      '3 comments',
+                      style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 8),
                     )
                   ],
                 ),
                 SizedBox(height: 30,),
                   Text(
                   'Protected by All 4 hours ago',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 8),
                 ),
+                SizedBox(height: 3,),
                 Text(
                   'My name is Ali. i have problem with my wife \nshe cheat on me. What should i do?',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 9),
                 ),
                 SizedBox(
                   height: 10,
@@ -184,7 +188,7 @@ class ForumPage extends StatelessWidget {
                     ),
                     Text(
                       '14 comments',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 8),
                     )
                   ],
                 ),

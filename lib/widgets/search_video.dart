@@ -14,6 +14,7 @@ class SearchVideo extends StatelessWidget {
         children: [
           Expanded(
             child: Container(
+              margin: EdgeInsets.only(left: 5),
               height: 90,
               width: 140,
               decoration: BoxDecoration(
@@ -32,7 +33,7 @@ class SearchVideo extends StatelessWidget {
               children: [
                 Text(
                   'Bawa Balk Awek Dari club ?',
-                  style: TextStyle(color: Colors.white, fontSize: 17),
+                  style: TextStyle(color: Colors.white, fontSize: 10,fontFamily: 'MonumentExtended'),
                 ),
                 SizedBox(
                   height: 5,
@@ -49,7 +50,7 @@ class SearchVideo extends StatelessWidget {
                     ),
                     Text(
                       'Watch Now',
-                      style: TextStyle(color: Colors.white, fontSize: 10),
+                      style: TextStyle(color: Colors.white, fontSize: 7,fontFamily: 'MonumentExtended'),
                     ),
                   ],
                 ),

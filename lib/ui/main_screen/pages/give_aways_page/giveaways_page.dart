@@ -11,10 +11,11 @@ class GiveawaysPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Column(
-        
         children: [
-          SizedBox(height: 25,),
-           AppBar(
+          SizedBox(
+            height: 25,
+          ),
+          AppBar(
             backgroundColor: Colors.black,
             title: Image.asset(
               'assets/images/applogo.png',
@@ -23,18 +24,16 @@ class GiveawaysPage extends StatelessWidget {
             centerTitle: true,
             actions: [
               IconButton(
-                
                 padding: EdgeInsets.only(right: 30),
                 onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => SearchPage(),
-                      ),
-                    );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SearchPage(),
+                    ),
+                  );
                 },
                 icon: Icon(
-                  
                   Icons.search,
                   size: 30,
                   color: Colors.white,
@@ -44,12 +43,12 @@ class GiveawaysPage extends StatelessWidget {
             leading: IconButton(
               padding: EdgeInsets.only(left: 30),
               onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => GiveawaysPage(),
-                      ),
-                    );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => GiveawaysPage(),
+                  ),
+                );
               },
               icon: Icon(
                 Icons.card_giftcard_outlined,
@@ -57,34 +56,44 @@ class GiveawaysPage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 20,),
-          Text('BGTV', style: TextStyle(color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold ),),
-          Text('Giveaways', style: TextStyle(color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold ),),
-          
+          SizedBox(
+            height: 30,
+          ),
+          Text(
+            'BGTV',
+            style: TextStyle(
+                color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold,fontFamily: 'MonumentExtended',),
+          ),
+          Text(
+            'Giveaways',
+            style: TextStyle(
+                color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold,fontFamily: 'MonumentExtended',),
+          ),
           Expanded(
             child: Container(
-              padding: EdgeInsets.only(left: 18, right: 15, ),
-              child: GridView(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
-                crossAxisSpacing: 10,
-                mainAxisSpacing: 15,
-                mainAxisExtent: 135
-                ),
-              children: [
-               GiveawaysCategory(),
-                GiveawaysCategory(),
-                 GiveawaysCategory(),
+              padding: EdgeInsets.only(
+                left: 18,
+                right: 15,
+              ),
+              child: GridView(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 3,
+                    crossAxisSpacing: 10,
+                    mainAxisSpacing: 15,
+                    mainAxisExtent: 135),
+                children: [
                   GiveawaysCategory(),
-                   GiveawaysCategory(),
-                    GiveawaysCategory(),
-              ],
+                  GiveawaysCategory(),
+                  GiveawaysCategory(),
+                  GiveawaysCategory(),
+                  GiveawaysCategory(),
+                  GiveawaysCategory(),
+                ],
               ),
             ),
           )
-          
         ],
       ),
-      
     );
   }
 }
