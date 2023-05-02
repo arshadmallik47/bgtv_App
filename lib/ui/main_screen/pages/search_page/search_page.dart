@@ -58,29 +58,38 @@ class SearchPage extends StatelessWidget {
             SizedBox(
               height: 15,
             ),
-            Container(
-              margin: EdgeInsets.only(
-                left: 18,
-                right: 15,
-              ),
-              height: 35,
-              child: TextField(
-                style: TextStyle(color: Colors.white),
-                cursorColor: Colors.white,
-                decoration: InputDecoration(
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color.fromRGBO(47, 47, 46, 1),
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    margin: EdgeInsets.only(
+                      left: 18,
+                     // right: 50,
+                    ),
+                    height: 35,
+                    child: TextField(
+                      style: TextStyle(color: Colors.white),
+                      cursorColor: Colors.white,
+                      decoration: InputDecoration(
+                        
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color.fromRGBO(47, 47, 46, 1),
+                          ),
+                        ),
+
+                        filled: true,
+                        fillColor: Color.fromRGBO(47, 47, 46, 1),
+                      ),
                     ),
                   ),
-                  suffixIcon: Icon(
-                    Icons.search,
-                    color: Colors.white,
-                  ),
-                  filled: true,
-                  fillColor: Color.fromRGBO(47, 47, 46, 1),
                 ),
-              ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 10, right: 10),
+                  child: Icon(Icons.search, color: Colors.white, size: 28,),
+                )
+
+              ],
             ),
             SizedBox(
               height: 15,
