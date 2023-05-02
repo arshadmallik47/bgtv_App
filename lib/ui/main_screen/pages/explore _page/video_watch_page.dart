@@ -193,16 +193,16 @@ class WatchToVideo extends StatelessWidget {
                           color: Colors.white,
                           fontFamily: 'MonumentExtended',
                           // fontWeight: FontWeight.w500,
-                          fontSize: 14),
+                          fontSize: 10),
                     ),
                     SizedBox(
-                      width: 18,
+                      width: 15,
                     ),
                     Text(
                       '21 hours ago',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 8,
+                        fontSize: 6,
                         fontFamily: 'MonumentExtended',
                       ),
                     )
@@ -217,7 +217,7 @@ class WatchToVideo extends StatelessWidget {
                     color: Colors.white,
                     fontFamily: 'MonumentExtended',
                     // fontWeight: FontWeight.w500,
-                    fontSize: 15,
+                    fontSize: 11,
                   ),
                 ),
               ),

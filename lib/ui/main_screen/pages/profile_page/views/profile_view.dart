@@ -19,7 +19,7 @@ class ProfilePageView extends StatelessWidget {
           ),
           const Text(
             '*Email',
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+            style: TextStyle(color: Colors.white, fontFamily: 'MonumentExtended', fontSize: 10),
           ),
           const SizedBox(height: 3,),
           SizedBox(
@@ -40,7 +40,7 @@ class ProfilePageView extends StatelessWidget {
           
           const Text(
             '*First Name',
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+            style: TextStyle(color: Colors.white, fontFamily: 'MonumentExtended', fontSize: 10),
           ),
           const SizedBox(height: 3,),
           SizedBox(
@@ -59,7 +59,7 @@ class ProfilePageView extends StatelessWidget {
           const SizedBox(height: 8,),
           const Text(
             '*Last Name',
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+            style: TextStyle(color: Colors.white, fontFamily: 'MonumentExtended', fontSize: 10),
           ),
           const SizedBox(height: 3,),
           SizedBox(
@@ -78,7 +78,7 @@ class ProfilePageView extends StatelessWidget {
           const SizedBox(height: 8,),
           const Text(
             '*Phone',
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+            style: TextStyle(color: Colors.white, fontFamily: 'MonumentExtended', fontSize: 10),
           ),
           const SizedBox(height: 3,),
           SizedBox(
@@ -96,7 +96,7 @@ class ProfilePageView extends StatelessWidget {
           const SizedBox(height: 8,),
           const Text(
             '*Password',
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+            style: TextStyle(color: Colors.white, fontFamily: 'MonumentExtended', fontSize: 10),
           ),
           const SizedBox(height: 3,),
           SizedBox(
@@ -114,7 +114,7 @@ class ProfilePageView extends StatelessWidget {
           const SizedBox(height: 8,),
           const Text(
             '*Confirm Password',
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+            style: TextStyle(color: Colors.white,fontFamily: 'MonumentExtended', fontSize: 10),
           ),
           const SizedBox(height: 3,),
           SizedBox(
@@ -136,9 +136,9 @@ class ProfilePageView extends StatelessWidget {
               children: [
                 ElevatedButton(
                     style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(Colors.red)),
+                        backgroundColor: MaterialStateProperty.all(Colors.indigo[400])),
                     onPressed: () {},
-                    child: const Text('SAVE CHANGES')),
+                    child: const Text('SAVE CHANGES', style: TextStyle(fontFamily: 'MonumentExtended', fontSize: 10, fontWeight: FontWeight.w600),)),
               ],
             ),
           ),

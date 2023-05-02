@@ -79,8 +79,8 @@ class ExplorePage extends StatelessWidget {
                     'Awek Batak RXZ ?',
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold),
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold, fontFamily: 'MonumentExtended',),
                   ),
                   const SizedBox(
                     height: 15,
