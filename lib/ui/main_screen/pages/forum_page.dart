@@ -1,5 +1,6 @@
 import 'package:bgtv/ui/main_screen/pages/give_aways_page/giveaways_page.dart';
 import 'package:bgtv/ui/main_screen/pages/search_page/search_page.dart';
+import 'package:bgtv/widgets/app_bar_widget.dart';
 import 'package:flutter/material.dart';
 
 class ForumPage extends StatelessWidget {
@@ -15,47 +16,7 @@ class ForumPage extends StatelessWidget {
           SizedBox(
             height: 30,
           ),
-          AppBar(
-            backgroundColor: Colors.black,
-            title: Image.asset(
-              'assets/images/applogo.png',
-              height: 120,
-            ),
-            centerTitle: true,
-            actions: [
-              IconButton(
-                padding: EdgeInsets.only(right: 30),
-                onPressed: () {
-                   Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => SearchPage(),
-                      ),
-                    );
-                },
-                icon: Icon(
-                  Icons.search,
-                  size: 30,
-                  color: Colors.white,
-                ),
-              )
-            ],
-            leading: IconButton(
-              padding: EdgeInsets.only(left: 30),
-              onPressed: () {
-                 Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => GiveawaysPage(),
-                      ),
-                    );
-              },
-              icon: Icon(
-                Icons.card_giftcard_outlined,
-                color: Colors.white,
-              ),
-            ),
-          ),
+         AppBarDesign(),
           SizedBox(
             height: 10,
           ),

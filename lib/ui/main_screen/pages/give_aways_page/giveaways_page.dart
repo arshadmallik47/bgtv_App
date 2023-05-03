@@ -1,4 +1,5 @@
 import 'package:bgtv/ui/main_screen/pages/give_aways_page/widgets/giveaways.dart';
+import 'package:bgtv/widgets/app_bar_widget.dart';
 import 'package:flutter/material.dart';
 
 import '../search_page/search_page.dart';
@@ -15,59 +16,27 @@ class GiveawaysPage extends StatelessWidget {
           SizedBox(
             height: 25,
           ),
-          AppBar(
-            backgroundColor: Colors.black,
-            title: Image.asset(
-              'assets/images/applogo.png',
-              height: 120,
-            ),
-            centerTitle: true,
-            actions: [
-              IconButton(
-                padding: EdgeInsets.only(right: 30),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => SearchPage(),
-                    ),
-                  );
-                },
-                icon: Icon(
-                  Icons.search,
-                  size: 30,
-                  color: Colors.white,
-                ),
-              )
-            ],
-            leading: IconButton(
-              padding: EdgeInsets.only(left: 30),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => GiveawaysPage(),
-                  ),
-                );
-              },
-              icon: Icon(
-                Icons.card_giftcard_outlined,
-                color: Colors.white,
-              ),
-            ),
-          ),
+          AppBarDesign(),
           SizedBox(
             height: 30,
           ),
           Text(
             'BGTV',
             style: TextStyle(
-                color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold,fontFamily: 'MonumentExtended',),
+              color: Colors.white,
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'MonumentExtended',
+            ),
           ),
           Text(
             'Giveaways',
             style: TextStyle(
-                color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold,fontFamily: 'MonumentExtended',),
+              color: Colors.white,
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'MonumentExtended',
+            ),
           ),
           Expanded(
             child: Container(

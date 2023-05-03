@@ -1,4 +1,5 @@
 import 'package:bgtv/ui/main_screen/pages/give_aways_page/giveaways_page.dart';
+import 'package:bgtv/widgets/app_bar_widget.dart';
 import 'package:bgtv/widgets/search_video.dart';
 import 'package:flutter/material.dart';
 
@@ -12,49 +13,7 @@ class SearchPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            AppBar(
-              
-              backgroundColor: Colors.black,
-              title: Image.asset(
-                'assets/images/applogo.png',
-                height: 120,
-              ),
-              centerTitle: true,
-              actions: [
-                IconButton(
-                
-                  padding: EdgeInsets.only(right: 30),
-                  onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => SearchPage(),
-                        ),
-                      );
-                  },
-                  icon: Icon(
-                    Icons.search,
-                    size: 30,
-                    color: Colors.white,
-                  ),
-                )
-              ],
-              leading: IconButton(
-                padding: EdgeInsets.only(left: 30),
-                onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => GiveawaysPage(),
-                        ),
-                      );
-                },
-                icon: Icon(
-                  Icons.card_giftcard_outlined,
-                  color: Colors.white,
-                ),
-              ),
-            ),
+            AppBarDesign(),
             SizedBox(
               height: 15,
             ),
@@ -64,20 +23,18 @@ class SearchPage extends StatelessWidget {
                   child: Container(
                     margin: EdgeInsets.only(
                       left: 18,
-                     // right: 50,
+                      // right: 50,
                     ),
                     height: 35,
                     child: TextField(
                       style: TextStyle(color: Colors.white),
                       cursorColor: Colors.white,
                       decoration: InputDecoration(
-                        
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(
                             color: Color.fromRGBO(47, 47, 46, 1),
                           ),
                         ),
-
                         filled: true,
                         fillColor: Color.fromRGBO(47, 47, 46, 1),
                       ),
@@ -86,9 +43,12 @@ class SearchPage extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 10, right: 10),
-                  child: Icon(Icons.search, color: Colors.white, size: 28,),
+                  child: Icon(
+                    Icons.search,
+                    color: Colors.white,
+                    size: 28,
+                  ),
                 )
-
               ],
             ),
             SizedBox(
