@@ -301,7 +301,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
                       ],
                     ),
                     const SizedBox(
-                      height: 15,
+                      height: 10,
                     
                     ),
                     RoundedButton(
