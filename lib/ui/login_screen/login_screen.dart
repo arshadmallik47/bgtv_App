@@ -18,7 +18,10 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        automaticallyImplyLeading: false,
+      ),
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Column(
@@ -57,7 +60,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 controller: emailController,
                 enableBorder: false,
                 hintText: 'Email',
-                
               ),
             ),
             const SizedBox(
@@ -70,7 +72,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 enableBorder: false,
                 textStyle: const TextStyle(color: Colors.black),
                 hintText: 'Password',
-               
               ),
             ),
             const SizedBox(
@@ -80,8 +81,7 @@ class _LoginScreenState extends State<LoginScreen> {
               padding: const EdgeInsets.only(left: 35, right: 20),
               child: RoundedButton(
                 colour: Colors.blue,
-                title: 'Login', 
-                
+                title: 'Login',
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -133,10 +133,11 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 const Text(
                   'New to BGTV?',
-                  style: TextStyle(color: Colors.white54,
-                   fontFamily: 'MonumentExtended',
-                   fontSize: 11,
-),
+                  style: TextStyle(
+                    color: Colors.white54,
+                    fontFamily: 'MonumentExtended',
+                    fontSize: 11,
+                  ),
                 ),
                 TextButton(
                   onPressed: () {
@@ -149,9 +150,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   },
                   child: const Text(
                     'Register now.',
-                    style: TextStyle(color: Colors.white,
-                    fontFamily: 'MonumentExtended',
-                    fontSize: 11,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'MonumentExtended',
+                      fontSize: 11,
                     ),
                   ),
                 )
