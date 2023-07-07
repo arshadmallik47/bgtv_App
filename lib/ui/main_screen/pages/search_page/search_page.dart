@@ -1,4 +1,4 @@
-import 'package:bgtv/ui/main_screen/pages/give_aways_page/giveaways_page.dart';
+
 import 'package:bgtv/widgets/app_bar_widget.dart';
 import 'package:bgtv/widgets/search_video.dart';
 import 'package:flutter/material.dart';

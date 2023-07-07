@@ -2,7 +2,7 @@ import 'package:bgtv/ui/main_screen/pages/give_aways_page/widgets/giveaways.dart
 import 'package:bgtv/widgets/app_bar_widget.dart';
 import 'package:flutter/material.dart';
 
-import '../search_page/search_page.dart';
+
 
 class GiveawaysPage extends StatelessWidget {
   const GiveawaysPage({super.key});

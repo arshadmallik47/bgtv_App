@@ -1,5 +1,5 @@
 import 'package:bgtv/ui/main_screen/pages/explore%20_page/explore_page.dart';
-import 'package:bgtv/ui/main_screen/pages/forum_page.dart';
+import 'package:bgtv/ui/main_screen/pages/support_page.dart';
 import 'package:bgtv/ui/main_screen/pages/profile_page/profile_page.dart';
 import 'package:bgtv/ui/main_screen/pages/feed_page.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +18,7 @@ class _MainScreenState extends State<MainScreen> {
     return [
       const ExplorePage(),
       const FeedPage(),
-      const ForumPage(),
+      const SupportPage(),
       const ProfilePage(),
     ];
   }
@@ -48,10 +48,10 @@ class _MainScreenState extends State<MainScreen> {
         inactiveColorPrimary: const Color.fromRGBO(130, 131, 131, 1),
         // textStyle: const TextStyle(fontSize: 17),
         icon: const Icon(
-          Icons.add_box_outlined,
+          Icons.support_agent,
          // Icons.card_giftcard_outlined,
         ),
-        title: 'Forum',
+        title: 'Support',
       ),
       PersistentBottomNavBarItem(
         activeColorPrimary: const Color.fromRGBO(100, 198, 248, 1),
